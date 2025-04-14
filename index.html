@@ -18,7 +18,7 @@
   </div>
   <nav class="nav">
     <a href="#intro">소개</a>
-    <a href="#menu">메뉴</a>
+    <a href="#menu">이용안내</a>
     <a href="#location">오시는 길</a>
   </nav>
   </header>
@@ -75,28 +75,7 @@
     </div>
   </section>
 
-  <!-- 위치 -->
-  <section class="location" id="location">
-    <h2>오시는 길</h2>
-    <p>경기도 양주시 원골로 104-21 (나이스 피크닉)</p>
-    <!-- 지도는 이미지로 대체하거나 구글 지도 iframe 삽입 가능 -->
-    <div id="map" style="width:100%;height:400px;"></div>
-    <script>
-      var mapOptions = {center: new naver.maps.LatLng(37.781656, 127.024580),
-                        zoom: 15,
-                        minZoom: 10,
-                        zoomControl: true, //줌 컨트롤의 표시 여부
-zoomControlOptions: { //줌 컨트롤의 옵션
-            position: naver.maps.Position.TOP_RIGHT
-},
- scrollWheel: false
-};
-      var map = new naver.maps.Map('map', mapOptions);
-      var marker = new naver.maps.Marker({  position: new naver.maps.LatLng(37.781656, 127.024580), map: map});
-  
-    </script>
-  </section>
-  
+    <!--이용안내 -->
   <section class="location-info">
   <div class="info-box">
     <h3>전화번호</h3>
@@ -145,6 +124,30 @@ zoomControlOptions: { //줌 컨트롤의 옵션
     </div>
   </div>
 </section>
+<!--이용안내 끝-->
+
+  <!-- 위치 -->
+  <section class="location" id="location">
+    <h2>오시는 길</h2>
+    <p>경기도 양주시 원골로 104-21 (나이스 피크닉)</p>
+    <!-- 지도는 이미지로 대체하거나 구글 지도 iframe 삽입 가능 -->
+    <div id="map" style="width:100%;height:400px;"></div>
+    <script>
+      var mapOptions = {center: new naver.maps.LatLng(37.781656, 127.024580),
+                        zoom: 15,
+                        minZoom: 10,
+                        zoomControl: true, //줌 컨트롤의 표시 여부
+zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+},
+ scrollWheel: false
+};
+      var map = new naver.maps.Map('map', mapOptions);
+      var marker = new naver.maps.Marker({  position: new naver.maps.LatLng(37.781656, 127.024580), map: map});
+  
+    </script>
+  </section>
+
 
   <!-- 푸터 -->
   <footer class="footer">
