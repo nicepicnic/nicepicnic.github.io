@@ -10,18 +10,28 @@
 <body>
 
   <!-- 헤더 -->
-  <header class="header">
-    <div class="logo">
+ <!-- 헤더 -->
+<header class="header">
+  <div class="hamburger" onclick="toggleMenu()">
+    ☰
+  </div>
+  <div class="logo">
     <a href="#">
-      <img src="images/logo.png" alt="로고" style="width: 200px; height: auto;">
+      <img src="images/logo.png" alt="로고">
     </a>
   </div>
-  <nav class="nav">
+  <nav class="nav" id="navMenu">
     <a href="#intro">소개</a>
     <a href="#menu">이용안내 & 수칙</a>
     <a href="#location">오시는 길</a>
   </nav>
-  </header>
+</header>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navMenu');
+    nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+  }
+</script>
 
   <!-- 배너 -->
   <section class="banner">
