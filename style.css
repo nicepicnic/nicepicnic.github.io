@@ -5,64 +5,21 @@ body {
   color: #275cac;
 }
 .header {
- display: flex;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  position: relative;
-  padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  background: #275cac; /* 포인트 색상으로 변경 */
+  color: #fff;
+  position: sticky;
+  top: 0;
 }
-.logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.logo img {
-  width: 160px;
-  height: auto;
-}
-
-/* 햄버거 버튼 */
-.hamburger {
-  font-size: 24px;
-  cursor: pointer;
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 1001;
-}
-
-/* 네비게이션 기본 숨김 (모바일) */
-.nav {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #fff;
-  flex-direction: column;
-  align-items: center;
-  display: none;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-
 .nav a {
-  padding: 15px;
-  display: block;
-  width: 100%;
-  text-align: center;
-  color: #275cac;
+   color: #fff;
+  margin-left: 20px;
   text-decoration: none;
-  border-top: 1px solid #eee;
+  font-weight: bold;
 }
-
-.nav a:hover {
-  background-color: #f2f2f2;
-}
-
 .banner {
   background: url('images/banner.jpg') center/cover no-repeat;
   height: 400px;
@@ -382,34 +339,6 @@ body {
   .menu-item {
     width: 90%;
     margin-bottom: 30px;
-  }
-}
-
-/* 데스크탑용 */
-@media (min-width: 768px) {
-  .header {
-    justify-content: space-between;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .logo {
-    position: static;
-    transform: none;
-  }
-
-  .nav {
-    display: flex !important;
-    position: static;
-    flex-direction: row;
-    box-shadow: none;
-  }
-
-  .nav a {
-    border-top: none;
-    padding: 10px 15px;
   }
 }
 
