@@ -64,7 +64,14 @@
     <!-- 지도는 이미지로 대체하거나 구글 지도 iframe 삽입 가능 -->
     <div id="map" style="width:100%;height:400px;"></div>
     <script>
-      var mapOptions = {center: new naver.maps.LatLng(37.781656, 127.024580),zoom: 15 };
+      var mapOptions = {center: new naver.maps.LatLng(37.781656, 127.024580),
+                        zoom: 15,
+                        minZoom: 10,
+                        zoomControl: true, //줌 컨트롤의 표시 여부
+zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+}
+};
       var map = new naver.maps.Map('map', mapOptions);
       var marker = new naver.maps.Marker({  position: new naver.maps.LatLng(37.781656, 127.024580), map: map});
     </script>
