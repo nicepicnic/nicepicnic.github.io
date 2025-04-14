@@ -96,6 +96,7 @@ body {
 /*매뉴(이용안내 및 수칙) 이미지 확대 기능 */
 .menu .menu-list {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
 }
