@@ -106,6 +106,21 @@ $("#interaction").on("click", function(e) {
     }
 });
 
+      // 타일 fadeIn 효과
+$("#tile-transition").on("click", function(e) {
+    e.preventDefault();
+
+    if (map.getOptions("tileTransition")) {
+        map.setOptions("tileTransition", false); //타일 fadeIn 효과 끄기
+
+        $(this).removeClass("control-on");
+    } else {
+        map.setOptions("tileTransition", true); //타일 fadeIn 효과 켜기
+        $(this).addClass("control-on");
+    }
+});
+$("#interaction, #tile-transition).addClass("control-on");
+
     </script>
   </section>
   
