@@ -353,13 +353,45 @@ body {
   }
 }
 /*플로팅 버튼 끝*/
-
 @media (max-width: 768px) {
   .header {
-        justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
-.hamburger {
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .banner {
+    height: 250px;
+    padding-top: 80px;
+  }
+
+  .menu-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+/* 데스크탑용 */
+@media (min-width: 768px) {
+  .header {
+    justify-content: space-between;
+  }
+
+  .hamburger {
     display: none;
   }
 
@@ -379,20 +411,7 @@ body {
     border-top: none;
     padding: 10px 15px;
   }
-  
-  .banner {
-    height: 250px;
-    padding-top: 80px;
-  }
-
-  .menu-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .menu-item {
-    width: 90%;
-    margin-bottom: 30px;
-  }
 }
+
+
 
