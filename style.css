@@ -188,13 +188,13 @@ body {
 
 .grid-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* 모바일에서도 격자 유지 */
   gap: 10px;
 }
 
 .media-item {
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1; /* 정사각형 형태 유지 */
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
@@ -205,6 +205,7 @@ body {
 .media-item:hover {
   transform: scale(1.05);
 }
+/*이미지 갤러기 끝*/
 
 /* 모달 스타일 */
 .modal {
