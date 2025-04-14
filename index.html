@@ -193,6 +193,12 @@ zoomControlOptions: { //줌 컨트롤의 옵션
   </button>
   <button class="top-btn">↑<br>TOP</button>
 </div>
+  <script>
+  document.querySelector('.top-btn').addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
+
    <!-- 플로팅 버튼 끝-->
   <!-- 푸터 -->
   <footer class="footer">
