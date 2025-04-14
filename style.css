@@ -7,16 +7,18 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 20px;
-  background: #222;
+  background: #275cac; /* 포인트 색상으로 변경 */
   color: #fff;
   position: sticky;
   top: 0;
 }
 .nav a {
-  color: #fff;
+   color: #fff;
   margin-left: 20px;
   text-decoration: none;
+  font-weight: bold;
 }
 .banner {
   background: url('images/banner.jpg') center/cover no-repeat;
@@ -47,6 +49,21 @@ body {
   padding: 20px;
   text-align: center;
   font-size: 14px;
+}
+/* 예약 버튼 */
+.btn-reserve {
+  background: #275cac; /* 포인트 컬러 */
+  color: white;
+}
+
+.btn-reserve:hover {
+  background: #1e4c8a;
+}
+
+/* 현재 메뉴 강조 등 포인트 영역에 활용 가능 */
+.active,
+.section-title {
+  color: #275cac;
 }
 
 @media (max-width: 768px) {
