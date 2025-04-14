@@ -1,49 +1,65 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hello</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>테라스 바베큐</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <!-- 헤더 -->
   <header class="header">
-    <div class="container">
-      <h1 class="logo"><a href="#">BDNS</a></h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#">회사소개</a></li>
-          <li><a href="#">브랜드</a></li>
-          <li><a href="#">제품소개</a></li>
-          <li><a href="#">고객지원</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="logo">테라스 바베큐</div>
+    <nav class="nav">
+      <a href="#intro">소개</a>
+      <a href="#menu">메뉴</a>
+      <a href="#location">오시는 길</a>
+    </nav>
   </header>
 
-  <!-- 메인 비주얼 -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>NICE PICNIC</h2>
-      <p>NICE PICNIC 의 브랜드를 소개합니다.</p>
+  <!-- 배너 -->
+  <section class="banner">
+    <h1>자연 속에서 즐기는 바베큐</h1>
+    <p>신선한 재료, 넓은 공간, 멋진 풍경까지!</p>
+  </section>
+
+  <!-- 소개 -->
+  <section class="intro" id="intro">
+    <h2>테라스 바베큐 소개</h2>
+    <p>자연과 함께하는 최고의 바베큐 경험을 선사합니다.</p>
+    <img src="images/intro.jpg" alt="가게 이미지">
+  </section>
+
+  <!-- 메뉴 -->
+  <section class="menu" id="menu">
+    <h2>메뉴 소개</h2>
+    <div class="menu-list">
+      <div class="menu-item">
+        <img src="images/pork.jpg" alt="돼지고기">
+        <h3>돼지고기 세트</h3>
+        <p>국내산 삼겹살, 목살 포함</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/beef.jpg" alt="소고기">
+        <h3>소고기 세트</h3>
+        <p>프리미엄 한우 구성</p>
+      </div>
     </div>
   </section>
 
-  <!-- 브랜드 소개 -->
-  <section class="brand-intro">
-    <div class="container">
-      <h3>NICE PICNIC는 브랜드의 가치를 최우선으로 생각합니다.</h3>
-      <p>기술력과 품질로 신뢰를 쌓아가며...</p>
-      <img src="brand-image.jpg" alt="브랜드 이미지" />
-    </div>
+  <!-- 위치 -->
+  <section class="location" id="location">
+    <h2>오시는 길</h2>
+    <p>경기도 양평군 어디어디…</p>
+    <p>📞 010-1234-5678</p>
+    <!-- 지도는 이미지로 대체하거나 구글 지도 iframe 삽입 가능 -->
   </section>
 
   <!-- 푸터 -->
   <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 NICE PICNIC. All Rights Reserved.</p>
-    </div>
+    <p>© 2025 테라스 바베큐. 모든 권리 보유.</p>
   </footer>
+
 </body>
 </html>
