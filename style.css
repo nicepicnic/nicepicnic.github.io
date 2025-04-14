@@ -242,7 +242,7 @@ body {
   color: #275cac;
 }
 /*플로팅 버튼*/
-/* 공통 플로팅 버튼 레이아웃 */
+/* 기본 플로팅 버튼 스타일 (PC & 모바일 공통) */
 .floating-buttons {
   position: fixed;
   bottom: 20px;
@@ -254,15 +254,19 @@ body {
   z-index: 1000;
 }
 
-/* 기본 원형 버튼 */
-.float-btn {
+.float-btn,
+.top-btn {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   border: none;
-  background-color: #7a8aab; /* 배경색 (회색빛 남색) */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+/* 개별 스타일 */
+.float-btn {
+  background-color: #7a8aab;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -273,22 +277,40 @@ body {
   height: 24px;
 }
 
-/* TOP 버튼 */
 .top-btn {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
   background-color: white;
   color: black;
   font-size: 12px;
   font-weight: bold;
-  border: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
   text-align: center;
   line-height: 1.2;
 }
+
+/* 📱 모바일 대응 */
+@media (max-width: 480px) {
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+
+  .float-btn,
+  .top-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .float-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .top-btn {
+    font-size: 11px;
+  }
+}
 /*플로팅 버튼 끝*/
+
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
