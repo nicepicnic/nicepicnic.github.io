@@ -32,51 +32,50 @@ body {
   text-align: center;
 }
 /*소개 부분 */
-.intro-gallery-scroll {
+.intro-gallery-block {
   padding: 40px 20px;
   background-color: #fff;
+  color: #333;
 }
-.intro-gallery-scroll h2 {
+
+.intro-gallery-block h2 {
+  font-size: 1.5rem;
   color: #275cac;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
   margin-bottom: 20px;
-  font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
-.scroll-container {
-  display: flex;
+.image-scroll {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+}
+.image-track {
+  display: flex;
   gap: 16px;
+  scroll-snap-align: start;
   padding-bottom: 20px;
 }
-.scroll-container::-webkit-scrollbar {
-  height: 8px;
-}
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: #275cac;
-  border-radius: 4px;
+.image-track img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.photo-card {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  background: #f9f9f9;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+.intro-text {
+  margin-top: 20px;
 }
-.photo-card img {
-  width: 100%;
-  height: auto;
-  display: block;
+.intro-text h3 {
+  font-size: 1.2rem;
+  color: #275cac;
+  margin-bottom: 10px;
 }
-.caption {
-  padding: 10px 12px;
+.intro-text p {
   font-size: 0.95rem;
-  color: #333;
+  line-height: 1.6;
 }
 
 /*소개 부분 끝*/
