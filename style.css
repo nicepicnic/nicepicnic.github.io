@@ -57,6 +57,48 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+
+.location-info {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+.location-info .info-box {
+  margin-bottom: 40px;
+}
+.location-info h3 {
+  color: #275cac;
+  margin-bottom: 10px;
+}
+.time-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.time-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  font-size: 14px;
+  text-align: center;
+}
+.feature img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 6px;
+}
+
 .footer {
   background: #f4f4f4;
   padding: 20px;
