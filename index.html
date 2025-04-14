@@ -80,31 +80,7 @@
     <img class="modal-content" id="menuModalImg">
   </div>
 
-    <script>
-  const menuModal = document.getElementById("menuModal");
-  const modalImg = document.getElementById("menuModalImg");
-  const closeBtn = menuModal.querySelector(".close");
-
-  // 메뉴 이미지 클릭 시 확대
-  document.querySelectorAll(".menu-image").forEach(img => {
-    img.addEventListener("click", () => {
-      menuModal.style.display = "block";
-      modalImg.src = img.src;
-    });
-  });
-
-  // 닫기 버튼
-  closeBtn.onclick = function () {
-    menuModal.style.display = "none";
-  };
-
-  // 외부 클릭 시 닫기
-  window.onclick = function (e) {
-    if (e.target === menuModal) {
-      menuModal.style.display = "none";
-    }
-  };
-</script>
+   
   </section>
 
     <!--이용안내 -->
@@ -196,6 +172,41 @@ zoomControlOptions: { //줌 컨트롤의 옵션
     <span class="close">&times;</span>
     <img class="modal-content" id="modal-image">
   </div>
+  
+</section>
+  
+ <!-- 이미지 갤러리 끝-->
+
+  <!-- 푸터 -->
+  <footer class="footer">
+    <p>© 2025 NICE PICNIC. All Rights Reserved.</p>
+  </footer>
+ <script>
+  const menuModal = document.getElementById("menuModal");
+  const modalImg = document.getElementById("menuModalImg");
+  const closeBtn = menuModal.querySelector(".close");
+
+  // 메뉴 이미지 클릭 시 확대
+  document.querySelectorAll(".menu-image").forEach(img => {
+    img.addEventListener("click", () => {
+      menuModal.style.display = "block";
+      modalImg.src = img.src;
+    });
+  });
+
+  // 닫기 버튼
+  closeBtn.onclick = function () {
+    menuModal.style.display = "none";
+  };
+
+  // 외부 클릭 시 닫기
+  window.onclick = function (e) {
+    if (e.target === menuModal) {
+      menuModal.style.display = "none";
+    }
+  };
+</script>
+  <!--이미지 갤러리 모달-->
     <script>
   const modal = document.getElementById("modal");
   const modalImg = document.getElementById("modal-image");
@@ -218,14 +229,5 @@ zoomControlOptions: { //줌 컨트롤의 옵션
     }
   }
 </script>
-</section>
-  
- <!-- 이미지 갤러리 끝-->
-
-  <!-- 푸터 -->
-  <footer class="footer">
-    <p>© 2025 NICE PICNIC. All Rights Reserved.</p>
-  </footer>
-
 </body>
 </html>
