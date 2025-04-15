@@ -88,10 +88,23 @@ body {
   cursor: pointer;
 }
 
+.menu-toggle,
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 16px;        /* 터치 영역 넓히기 */
+  margin: -8px;         /* 버튼이 밀리지 않도록 조정 */
+  font-size: 24px;
+  color: #000;
+  z-index: 1001;
+}
+
 .menu-toggle i,
 .close-btn i {
   font-size: 26px;
   color: #000; /* 검정색 */
+  pointer-events: none; /* 아이콘 내부 클릭도 버튼으로 인식되게 */
 }
 
 /*토글 메뉴*/
