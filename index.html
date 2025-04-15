@@ -10,6 +10,7 @@
 <body>
 
  <!-- 헤더 -->
+  <!--
   <header class="header">
     <div class="logo">
     <a href="#">
@@ -22,7 +23,23 @@
     <a href="#location">오시는 길</a>
   </nav>
   </header>
+-->
+<header class="header">
+  <button class="menu-toggle" id="menuToggle">&#9776;</button> <!-- 햄버거 -->
+  
+  <div class="logo">
+    <a href="#"><img src="images/logo.png" alt="로고" style="width: 200px; height: auto;></a>
+  </div>
+  
+  <nav class="nav" id="navMenu">
+    <button class="close-btn" id="closeMenu">&times;</button>
+    <a href="#about">소개</a>
+    <a href="#works">이용안내</a>
+    <a href="#shop">오시는 길</a>
+  </nav>
+</header>
 
+  
   <!-- 배너 -->
   <section class="banner">
     <h1>자연 속에서 즐기는 바베큐</h1>
@@ -249,5 +266,27 @@ window.addEventListener("click", function (event) {
   }
 });
 </script>
+ <!-- 메뉴 토글-->
+      <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.add('open');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+  });
+
+  // 바깥 클릭 시 닫기 (선택 사항)
+  window.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== menuToggle) {
+      navMenu.classList.remove('open');
+    }
+  });
+</script>
+<!-- 메뉴 토글 끝-->
 </body>
 </html>
