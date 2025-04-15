@@ -88,6 +88,12 @@ body {
   cursor: pointer;
 }
 
+.menu-toggle i,
+.close-btn i {
+  font-size: 26px;
+  color: #000; /* 검정색 */
+}
+
 /*토글 메뉴*/
 
 
