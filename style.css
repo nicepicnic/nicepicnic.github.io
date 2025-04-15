@@ -407,13 +407,6 @@ body {
   }
   */
 
-    .menu-toggle {
-    font-size: 28px;
-  }
-
-  .nav a {
-    font-size: 1.1rem;
-  }
   .banner {
     height: 250px;
     padding-top: 80px;
@@ -427,6 +420,16 @@ body {
   .menu-item {
     width: 90%;
     margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    font-size: 28px;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
   }
 }
 
