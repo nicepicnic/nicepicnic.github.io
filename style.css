@@ -88,15 +88,6 @@ body {
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
-  .menu-toggle {
-    font-size: 28px;
-  }
-
-  .nav a {
-    font-size: 1.1rem;
-  }
-}
 /*토글 메뉴*/
 
 
@@ -415,6 +406,14 @@ body {
     margin: 10px 0;
   }
   */
+
+    .menu-toggle {
+    font-size: 28px;
+  }
+
+  .nav a {
+    font-size: 1.1rem;
+  }
   .banner {
     height: 250px;
     padding-top: 80px;
