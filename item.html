@@ -62,5 +62,28 @@
       <!-- 필요하면 추가 카드들 계속 넣을 수 있음 -->
     </div>
   </section>
+
+   <!-- 메뉴 토글-->
+      <script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMenu = document.getElementById('navMenu');
+  const closeMenu = document.getElementById('closeMenu');
+
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.add('open');
+  });
+
+  closeMenu.addEventListener('click', () => {
+    navMenu.classList.remove('open');
+  });
+
+  // 바깥 클릭 시 닫기 (선택 사항)
+  window.addEventListener('click', (e) => {
+    if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== menuToggle) {
+      navMenu.classList.remove('open');
+    }
+  });
+</script>
+<!-- 메뉴 토글 끝-->
 </body>
 </html>
