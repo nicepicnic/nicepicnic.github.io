@@ -103,7 +103,7 @@ body {
 /*토글 메뉴*/
 
 .banner {
-  background: url('images/banner.jpg') center/cover no-repeat;
+  background: url('../images/banner.jpg') center/cover no-repeat;
   height: 400px;
   color: white;
   text-align: center;
