@@ -5,6 +5,10 @@ body {
   color: #275cac;
 }
 
+.hashtag-text {
+  color: #275cac;
+}
+
 /*반응형 토글메뉴*/
 .header {
   position: fixed;
