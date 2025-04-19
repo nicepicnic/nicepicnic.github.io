@@ -210,13 +210,9 @@ body {
 .time-table td {
   padding: 8px 10px;
   border-bottom: 1px solid #ddd;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
-.time-table td:first-child {
-  vertical-align: middle;
-  text-align: center;
-}
 
 .features {
   display: flex;
