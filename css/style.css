@@ -161,9 +161,6 @@ body {
 }
 /*소개 부분 끝*/
 
-/*대여 아이템*/
-/*대여 아이템 끝*/
-
 /*매뉴(이용안내 및 수칙) 이미지 확대 기능 */
 .menu .menu-list {
   display: flex;
@@ -214,6 +211,11 @@ body {
   padding: 8px 10px;
   border-bottom: 1px solid #ddd;
   vertical-align: top;
+}
+
+.time-table td:first-child {
+  vertical-align: middle;
+  text-align: center;
 }
 
 .features {
