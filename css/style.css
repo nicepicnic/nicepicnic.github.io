@@ -188,6 +188,14 @@ body {
   transform: scale(1.03);
 }
 
+.menu h2,
+.location h2 {
+  font-size: 1.5rem;
+  color: #275cac;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
 
 /*매뉴(이용안내 및 수칙) 이미지 확대 기능 끝*/
 
