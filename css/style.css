@@ -270,6 +270,10 @@ body {
   text-align: left;
 }
 
+.notice-table td:first-child {
+  vertical-align: middle;
+  text-align: center;
+}
 
 .features {
   display: flex;
