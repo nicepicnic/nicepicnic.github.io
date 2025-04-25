@@ -226,7 +226,6 @@ body {
 }
 
 .notice-table {
-  font-family: 'Noto Sans KR', sans-serif;  /* 전체 폰트 통일 */
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
