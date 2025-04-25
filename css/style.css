@@ -226,6 +226,8 @@ body {
 }
 
 .notice-table {
+  font-family: 'Noto Sans KR', sans-serif;  /* 전체 폰트 통일 */
+  color: #275cac;                           /* 사이트 기본 텍스트 색상 */
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
@@ -251,6 +253,21 @@ body {
 .notice-table .highlight {
   color: #d80000;
   font-weight: bold;
+}
+
+/* ✅ 구분 열 - 첫 번째 열 전체 중앙 정렬 */
+.notice-table th:first-child,
+.notice-table td:first-child {
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ✅ 내용 열 - 헤더만 중앙, 내용은 왼쪽 정렬 */
+.notice-table th:last-child {
+  text-align: center;
+}
+.notice-table td:last-child {
+  text-align: left;
 }
 
 
