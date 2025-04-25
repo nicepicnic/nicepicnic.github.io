@@ -231,6 +231,7 @@ body {
   margin-top: 10px;
   font-size: 15px;
   line-height: 1.5;
+  table-layout: auto; /* ✅ 열 너비 자동 조정 */
 }
 
 .notice-table th,
@@ -244,7 +245,7 @@ body {
 .notice-table th {
   background-color: #f7f7f7;
   font-weight: 600;
-  width: 120px;
+  white-space: nowrap; /* 줄바꿈 방지로 길이에 맞게 너비 확보 */
 }
 
 .notice-table .highlight {
