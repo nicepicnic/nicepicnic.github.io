@@ -70,16 +70,3 @@
   color: #000;
 }
 /*대여 아이템 끝*/
-
-
-.item-subtitle {
-  font-size: 0.85rem;
-  color: #888;
-  margin-left: 4px;
-}
-
-.item-note {
-  font-size: 0.85rem;
-  color: #666;
-  margin: 4px 0;
-}
