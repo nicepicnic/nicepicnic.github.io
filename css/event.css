@@ -30,6 +30,19 @@
   transform: scale(1.05);
 }
 
+.event-more {
+  margin-top: 30px;
+  text-align: right;
+}
+
+.event-more a {
+  text-decoration: underline;
+  color: #666;
+}
+
+.event-more a:hover {
+  color: #000;
+}
 
 /* 이미지 모달 */
 .modal {
