@@ -19,7 +19,8 @@
   <link rel="stylesheet" href="css/event.css">
 
   <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=gxhiizwzqn"></script>
-  <!-- head에 추가 -->
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--favicon-->
 <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
@@ -414,9 +415,13 @@ zoomControlOptions: { //줌 컨트롤의 옵션
 function goToNaver() {
   window.open('https://booking.naver.com/booking/12/bizes/1403564?preview=1&startDateTime=2025-05-03T00%3A00%3A00%2B09%3A00', '_blank');
 }
-
+ // 카카오 초기화 (자바스크립트 키 입력)
+Kakao.init('_Vimxln'); // 🔁 여기에 본인의 키 입력
+    
 function openChat() {
-  alert('준비 중입니다.');
+  Kakao.Channel.chat({
+      channelPublicId: '_Vimxln' // 🔁 예: '_AbCdEfG123' 형태
+    });
 }
 
 function goToSNS() {
