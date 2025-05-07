@@ -309,6 +309,39 @@
 </div>
   </section>
 
+  <!-- 이벤트 섹션 추가 시작 -->
+<section id="event" class="section">
+  <h2>이벤트</h2>
+  <div class="gallery">
+    <img src="images/event1.jpg" alt="이벤트1" class="event-img" onclick="openModal(this)">
+    <img src="images/event2.jpg" alt="이벤트2" class="event-img" onclick="openModal(this)">
+    <img src="images/event3.jpg" alt="이벤트3" class="event-img" onclick="openModal(this)">
+  </div>
+  <div class="more-button">
+    <a href="event.html" class="btn">더보기 &rarr;</a>
+  </div>
+</section>
+
+<!-- 모달 이미지 뷰어 -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+<!-- 이벤트 섹션 추가 끝 -->
+
+<!-- 기존 자바스크립트나 </body> 위에 추가 -->
+<script>
+  function openModal(img) {
+    document.getElementById("imgModal").style.display = "block";
+    document.getElementById("modalImg").src = img.src;
+  }
+
+  function closeModal() {
+    document.getElementById("imgModal").style.display = "none";
+  }
+</script>
+
+
   
   <!-- 위치 -->
   <section class="location" id="location">
