@@ -29,6 +29,12 @@
   flex-direction: column;
 }
 
+.shop-card-link {
+  display: block;
+  text-decoration: none; /* 밑줄 제거 */
+  color: inherit;         /* 링크 색상 기본 유지 */
+}
+
 .shop-image {
   width: 100%;
   height: 200px;
