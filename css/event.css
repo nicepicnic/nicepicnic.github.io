@@ -39,23 +39,22 @@
 }
 
 .event-thumb {
-  width: 100%;
-  height: 200px;          /* ✅ 이미지 높이 고정 (원하는 값으로 조정 가능) */
-  overflow: hidden;       /* 넘치는 이미지 잘라내기 */
-  padding: 0 12px;             /* ✅ 좌우 여백 추가 */
-  box-sizing: border-box;      /* ✅ 패딩 포함해서 너비 계산 */
+  height: 200px;
+  overflow: hidden;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
-/* 썸네일 */
 .event-thumb img {
-  max-width: auto;     /* ✅ 절대 부모 너비를 넘지 않게 함 */
-  max-height: 100%;
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* ✅ 중심 기준으로 꽉 차게 보여줌 (crop) */
+  object-fit: cover;
   object-position: center;
   display: block;
-  border-radius: 8px;          /* ✅ 둥근 테두리로 여백처럼 보이게 */
+  border-radius: 8px;
 }
 
 /* 내용 영역 */
