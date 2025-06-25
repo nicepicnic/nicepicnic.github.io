@@ -157,25 +157,6 @@
     <p onclick="document.location.href='tel:01073200086'">📞 010-7320-0086</p>
   </div>
 
-  <!--
-  <div class="info-box">
-    <h3>이용시간</h3>
-    <table class="time-table">
-      <tr>
-        <td><strong>평일</strong></td>
-        <td>11:00 ~ 21:00<br>자유 이용(최대 6시간)</td>
-      </tr>
-      <tr>
-        <td><strong>주말</strong></td>
-        <td>11:00 ~ 21:00<br>1부(11:00~15:00), 2부(17:00~21:00)</td>
-      </tr>
-      <tr>
-        <td><strong>공휴일</strong></td>
-        <td>11:00 ~ 21:00<br>1부(11:00~15:00), 2부(17:00~21:00)</td>
-      </tr>
-    </table>
-  </div>
-  --> 
 
     <div class="info-box">
     <h3>공통 안내</h3>
@@ -248,10 +229,6 @@
           <td>대여 가능 품목</td>
           <td>대여 품목 참고</td>
         </tr>
-        <!--<tr>
-          <td>후기 이벤트</td>
-          <td>참여 시 기본세트존 무료 이용</td>
-        </tr>-->
       </tbody>
     </table>
   </div>
@@ -353,19 +330,73 @@
 </div>
   </section>
 
-  <!-- 이벤트 섹션 추가 시작 -->
+  <!-- 이벤트 섹션 추가 시작
 <section id="event" class="section">
   <h2>이벤트</h2>
   <div class="gallery">
     <img src="images/event/event_today_book_web.jpg" alt="이벤트1" class="event-img" onclick="openModal(this)">
-    <!-- <img src="images/dummy.jpg" alt="이벤트2" class="event-img" onclick="openModal(this)">
-    <img src="images/dummy.jpg" alt="이벤트3" class="event-img" onclick="openModal(this)"> -->
   </div>
-  <!--
-  <div class="event-more">
-    <a href="event.html" class="btn">더보기 &rarr;</a>
-  </div> -->
+</section> -->
+
+  <!-- ===== 이벤트 섹션 시작 ===== -->
+<section id="events" class="event-section">
+  <h2 class="section-title">📌 진행 중인 이벤트</h2>
+
+  <div class="event-grid">
+    <!-- 이벤트 카드 #1 -->
+    <a href="https://blog.naver.com/nicepicnic/123" class="event-card" target="_blank" rel="noopener">
+      <figure class="event-thumb">
+        <img src="images/event-fan.jpg" alt="부채 증정 이벤트 썸네일">
+      </figure>
+      <div class="event-content">
+        <h3 class="event-title">🎐 부채 증정 이벤트</h3>
+        <p class="event-date">2025.06.25&nbsp;~&nbsp;소진 시</p>
+        <p class="event-desc">방문 인원수만큼 시원한 감성 부채를 드려요!</p>
+        <span class="event-link">자세히 보기</span>
+      </div>
+    </a>
+
+    <!-- 이벤트 카드 #2 -->
+    <a href="https://blog.naver.com/nicepicnic/456" class="event-card" target="_blank" rel="noopener">
+      <figure class="event-thumb">
+        <img src="images/event-night.jpg" alt="저녁 3시간 무료 쿠폰 썸네일">
+      </figure>
+      <div class="event-content">
+        <h3 class="event-title">🌙 저녁 3시간 무료 쿠폰</h3>
+        <p class="event-date">~ 2025.08.31</p>
+        <p class="event-desc">오후 6–10시 원하는 3시간을 기본세트 무료로!</p>
+        <span class="event-link">자세히 보기</span>
+      </div>
+    </a>
+
+    <!-- 이벤트 카드 #3 -->
+    <a href="https://blog.naver.com/nicepicnic/789" class="event-card" target="_blank" rel="noopener">
+      <figure class="event-thumb">
+        <img src="images/event-campnic.jpg" alt="캠크닉존 무료 체험 썸네일">
+      </figure>
+      <div class="event-content">
+        <h3 class="event-title">🏕️ 캠크닉존 무료 체험</h3>
+        <p class="event-date">기간 한정(선착순)</p>
+        <p class="event-desc">불 없는 감성 캠크닉존을 이벤트 기간 동안 무료로!</p>
+        <span class="event-link">자세히 보기</span>
+      </div>
+    </a>
+
+    <!-- 이벤트 카드 #4 -->
+    <a href="https://blog.naver.com/nicepicnic/1011" class="event-card" target="_blank" rel="noopener">
+      <figure class="event-thumb">
+        <img src="images/event-berry.jpg" alt="체리 따기 체험 썸네일">
+      </figure>
+      <div class="event-content">
+        <h3 class="event-title">🍒 체리 따기 체험</h3>
+        <p class="event-date">2025.07.01&nbsp;–&nbsp;07.15</p>
+        <p class="event-desc">나무에서 직접 따는 달콤한 체리를 맛보세요!</p>
+        <span class="event-link">자세히 보기</span>
+      </div>
+    </a>
+  </div>
 </section>
+<!-- ===== 이벤트 섹션 끝 ===== -->
 
 <!-- 모달 이미지 뷰어 -->
 <div id="imgModal" class="modal" onclick="closeModal()">
