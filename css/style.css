@@ -161,6 +161,57 @@ body {
 }
 /*소개 부분 끝*/
 
+/*전체 대여 요금 안내 시작*/
+.rental-section {
+  padding: 60px 20px;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.rental-table-wrapper {
+  overflow-x: auto;
+  margin-top: 30px;
+}
+
+.rental-table {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.rental-table thead th {
+  background-color: #f8f8f8;
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+  font-weight: 600;
+}
+
+.rental-table td {
+  padding: 14px 10px;
+  border-bottom: 1px solid #eee;
+  vertical-align: top;
+}
+
+.rental-table tr:nth-child(even) {
+  background-color: #fcfcfc;
+}
+
+.rental-table strong {
+  color: #ff6b00;
+}
+
+@media screen and (max-width: 768px) {
+  .rental-table {
+    font-size: 0.85rem;
+  }
+  .rental-table td, .rental-table th {
+    padding: 10px 6px;
+  }
+}
+/*전체 대여 요금 안내 끝*/
+
 /*매뉴(이용안내 및 수칙) 이미지 확대 기능 */
 .menu .menu-list {
   display: flex;
@@ -188,8 +239,7 @@ body {
   transform: scale(1.03);
 }
 
-.menu h2,
-.location h2 {
+.menu h2{
   font-size: 1.5rem;
   color: #275cac;
   border-bottom: 1px solid #ccc;
@@ -197,81 +247,192 @@ body {
   padding-bottom: 10px;
 }
 
-/*매뉴(이용안내 및 수칙) 이미지 확대 기능 끝*/
-
-.location-info {
-  padding: 40px 20px;
-  background-color: #f9f9f9;
-  color: #333;
+/* === 전체 대여 이용 안내 섹션 스타일 === */
+/* 전체 배경을 가진 이용안내 섹션 */
+.rental-guide-bg {
+  background-color: #fafafa;
+  padding: 60px 0;
 }
-.location-info .info-box {
+
+/* 가운데 레이아웃 및 내부 콘텐츠 */
+.rental-guide-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: #333;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.rental-guide-section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2b3a55;
+}
+
+.guide-block {
   margin-bottom: 40px;
 }
-.location-info h3 {
+
+.guide-block h3 {
+  font-size: 1.4rem;
   color: #275cac;
-  margin-bottom: 10px;
-}
-.time-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-.time-table td {
-  padding: 8px 10px;
-  border-bottom: 1px solid #ddd;
-  vertical-align: middle;
+  margin-bottom: 15px;
 }
 
-.notice-table-wrapper {
-  overflow-x: auto;
+.guide-block ul {
+  list-style: disc;
+  padding-left: 20px;
 }
 
-.notice-table {
-  width: 100%;
-  border-collapse: collapse;
+.guide-block ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.guide-block p {
+  line-height: 1.6;
   margin-top: 10px;
-  font-size: 15px;
-  line-height: 1.5;
-  table-layout: auto; /* ✅ 열 너비 자동 조정 */
 }
 
-.notice-table th,
-.notice-table td {
+/* 테이블 스타일 */
+.checkin-table,
+.refund-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.checkin-table th, .checkin-table td,
+.refund-table th, .refund-table td {
   border: 1px solid #ccc;
-  padding: 12px;
-  text-align: left;
-  vertical-align: top;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.95rem;
 }
 
-.notice-table th {
-  background-color: #f7f7f7;
-  font-weight: 600;
-  white-space: nowrap; /* 줄바꿈 방지로 길이에 맞게 너비 확보 */
-}
-
-.notice-table .highlight {
-  color: #d80000;
+.checkin-table thead,
+.refund-table thead {
+  background-color: #f0f4fa;
   font-weight: bold;
 }
 
-/* ✅ 구분 열 - 첫 번째 열 전체 중앙 정렬 */
-.notice-table th:first-child,
-.notice-table td:first-child {
-  text-align: center;
-  white-space: nowrap;
+/* 반응형 */
+@media (max-width: 768px) {
+  .rental-guide-section {
+    padding: 0 15px;
+  }
+
+  .guide-block h3 {
+    font-size: 1.2rem;
+  }
+
+  .checkin-table th, .checkin-table td,
+  .refund-table th, .refund-table td {
+    font-size: 0.85rem;
+    padding: 8px;
+  }
 }
 
-/* ✅ 내용 열 - 헤더만 중앙, 내용은 왼쪽 정렬 */
-.notice-table th:last-child {
+.contact-block {
   text-align: center;
-}
-.notice-table td:last-child {
-  text-align: left;
+  margin-top: 40px;
 }
 
-.notice-table td:first-child {
-  vertical-align: middle;
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.contact-button {
+  padding: 12px 24px;
+  background-color: #275cac;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.contact-button:hover {
+  background-color: #1f4a8a;
+}
+
+.contact-button.kakao {
+  background-color: #fcd900;
+  color: #000;
+}
+
+.contact-button.kakao:hover {
+  background-color: #e5c400;
+}
+/*=== 전체 대여 이용 안내 섹션 스타일 끝 ===*/
+
+/*=== 구글 캘린더 섹션 스타일 시작 ===*/
+.calendar-section {
+  background-color: #f7f7f7;
+  padding: 60px 20px;
   text-align: center;
 }
+
+.calendar-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.calendar-note {
+  margin-top: 16px;
+  font-size: 15px;
+  color: #444;
+  text-align: center;
+  line-height: 1.6;
+}
+.calendar-note strong {
+  color: #275cac;
+}
+/*=== 구글 캘린더 섹션 스타일 끝 ===*/
+
+
+/*=== 매점 안내 섹션 스타일 시작 ===*/
+.store-info-section {
+  background-color: #f4f4f4;
+  padding: 60px 20px;
+}
+
+.store-info-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.store-info-inner h2 {
+  font-size: 2rem;
+  color: #2b3a55;
+  margin-bottom: 20px;
+}
+
+.store-desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.store-image-wrapper img {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/*=== 매점 안내 섹션 스타일 끝 ===*/
+
 
 .features {
   display: flex;
