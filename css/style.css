@@ -150,6 +150,10 @@ body {
 
 .intro-text {
   margin-top: 20px;
+   max-width: 640px;          /* 텍스트 영역 너비 제한 */
+  margin: 0 auto;            /* 가운데 정렬 */
+  padding: 2rem 1rem;        /* 상하 여백과 좌우 패딩 */
+  text-align: center          /* 내부 텍스트는 왼쪽 정렬 (원하면 center로 바꿔도 됨) */
 }
 .intro-text h3 {
   font-size: 1.2rem;
