@@ -5,584 +5,199 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
   <meta name="facebook-domain-verification" content="5essfuy4swjok8lpnynpqq5hbp22fp" />
   <title>나이스 피크닉</title>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBHR5FWN6Q"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CBHR5FWN6Q');
-</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBHR5FWN6Q"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CBHR5FWN6Q');
+  </script>
   
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/item.css">
-  <link rel="stylesheet" href="css/event.css">
-
-  <script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=gxhiizwzqn"></script>
-  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
-  
+  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <!--favicon-->
-<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-<link rel="manifest" href="/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body>
 
-<header class="header">
-<!-- 햄버거 버튼 -->
-<button class="menu-toggle" id="menuToggle">
-  <i class="fas fa-bars"></i>
-</button>
-  
-  <div class="logo">
-    <a href="#"><img src="images/logo.png" alt="로고"></a>
-  </div>
-  
-  <nav class="nav" id="navMenu">
-   <!-- 닫기 버튼 -->
-  <button class="close-btn" id="closeMenu">
-    <i class="fas fa-times"></i>
-  </button>
-    <!--<a href="./item.html">대여상품</a>-->
-    <a href="./shop.html">SHOP</a>
-   <!--  <a href="#">이벤트</a>
-
-    <a href="#shop">오시는 길</a> -->
-  </nav>
-</header>
-
-  
-  <!-- 배너 -->
-  <section class="banner">
-     <h1>천여 평 자연 속, <br>단 하나의 팀만을 위한 프라이빗 피크닉</h1>
-  <a href="https://forms.gle/FgAyixtWCY9rHDPP8" class="booking-btn-text" target="_blank" rel="noopener noreferrer">지금 예약하기</a>
+<main class="link-hub-container">
+  <section class="profile">
+    <div class="profile-img">
+      <img src="images/logo.jpg" alt="나이스 피크닉">
+    </div>
+    <h1>나이스 피크닉</h1>
+    <p class="profile-desc">프라이빗 마당·스튜디오 대여 및 맞춤형 촬영 서비스</p>
   </section>
 
-
-
-
-  <section class="intro-gallery-block" id="intro">
-  <h2>나이스 피크닉 소개</h2>
-  <div class="image-scroll">
-    <div class="image-track">
-      <img src="images/intro/intro07.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro05.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro03.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro06.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro04.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro01.jpg" alt="나이스 피크닉 외관" />
-      <img src="images/intro/intro02.jpg" alt="나이스 피크닉 외관" />
-      <!-- 필요하면 이미지 더 추가 가능 -->
-    </div>
-  </div>
-
-  <div class="intro-text">
-  <h3>🌿 단 한 팀만을 위한, 천여 평 자연 속 프라이빗 캠핑장</h3>
-<p>
-나이스 피크닉은 타임별 한 팀만 받습니다.<br><br>
-
-도심을 벗어난 천여 평 숲속,<br>
-오직 당신만을 위한 캠프장이 펼쳐집니다.<br><br>
-
-🏕️ 감성 가득한 캠크닉을 자유롭게,<br>
-🍖 내가 준비한 재료로 셀프 바베큐를 마음껏,<br>
-🐾 반려견과 아이까지, 모두가 안전하게 함께할 수 있는 공간.<br><br>
-
-가족, 연인, 친구들과<br>
-남의 시선 없는 진짜 쉼을 누려보세요.<br><br>
-
-“공간은 넓고, 시간은 느리게 흐릅니다.”<br>
-오늘, 그 공간을 단독으로 가져보세요.<br><br>
-  <span class="hashtag-text">
-    #단독대여 #프라이빗캠크닉 #감성바베큐 #반려견OK #자연속힐링 #가족모임 #단체모임추천 #야유회 #야외촬영
-  </span>
-</p>
-  </div>
-</section>
-
-  <!-- 단독 대여 가격 안내 -->
-<section id="rental-info" class="rental-section">
-  <h2 class="section-title">단독 대여 요금 안내</h2>
-  <div class="rental-table-wrapper">
-    <table class="rental-table">
-      <thead>
-        <tr>
-          <th>상품</th>
-          <th>이용시간</th>
-          <th>평일<br>(월–목)</th>
-          <th>주말·공휴일<br>(금–일)</th>
-          <th>기준 인원</th>
-          <th>추가 인원</th>
-          <th>반려견</th>
-          <th>비고</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>종일권</strong></td>
-          <td>11h<br>(11:00–22:00)</td>
-          <td><strong>₩170,000</strong></td>
-          <td><strong>₩210,000</strong></td>
-          <td>4명</td>
-          <td>+₩5,000 / 명</td>
-          <td>+₩5,000 / 마리<br>(최대 5)</td>
-          <td>최대 10명·5마리</td>
-        </tr>
-        <tr>
-          <td><strong>오전 하프</strong></td>
-          <td>5h<br>(11:00–16:00)</td>
-          <td>₩78,000</td>
-          <td>₩98,000</td>
-          <td>〃</td>
-          <td>〃</td>
-          <td>〃</td>
-          <td>〃</td>
-        </tr>
-        <tr>
-          <td><strong>오후 하프</strong></td>
-          <td>5h<br>(17:00–22:00)</td>
-          <td>₩78,000</td>
-          <td>₩98,000</td>
-          <td>〃</td>
-          <td>〃</td>
-          <td>〃</td>
-          <td>〃</td>
-        </tr>
-
-        <tr>
-          <td><strong>1시간 추가</strong></td>
-          <td>사전·현장 공통</td>
-          <td>₩20,000</td>
-          <td>₩25,000</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-          <td>-</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
-  <!-- 단독 대여 가격 안내 끝-->
-
- <!-- 옵션 가격 안내 시작-->
-  <section id="addon-info" class="rental-section">
-  <h2 class="section-title">선택형 옵션 요금</h2>
-  <div class="rental-table-wrapper">
-    <table class="rental-table">
-      <thead>
-        <tr>
-          <th>옵션</th>
-          <th>평일</th>
-          <th>주말·공휴일</th>
-          <th>포함 내용</th>
-          <th>비고</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>풀장 패스 (사람)</strong></td>
-          <td>₩30,000</td>
-          <td>₩40,000</td>
-          <td>세로 5.5m 메인 풀(11~19시 이용 가능)<br> · 간이 샤워장</td>
-          <td>팀당 요금</td>
-        </tr>
-        <tr>
-          <td><strong>반려견 수영장 패스</strong></td>
-          <td>₩15,000</td>
-          <td>₩20,000</td>
-          <td>3m 원형 펫 풀(수심 70cm)<br>
-          💧 주기적으로 물 교체 및 관리됩니다.<br>🐶 쾌적한 이용을 위해 <strong>사전 예약 필수!</strong></td>
-          <td>팀당 요금</td>
-        </tr>
-        <tr>
-          <td><strong>BBQ 세트</strong></td>
-          <td>₩20,000</td>
-          <td>₩20,000</td>
-          <td>그릴 + 숯· 토치 · 집게 · 장갑</td>
-          <td>숯 리필 = ₩15,000 / 석쇠 리필 ₩3,000</td>
-        </tr>
-        <tr>
-          <td><strong>18인치 무선 선풍기</strong></td>
-          <td>₩5,000</td>
-          <td>₩5,000</td>
-          <td>최대풍속 2.5시간, 최소풍속 20시간</td>
-          <td>현장 재고 4</td>
-        </tr>
-        <tr>
-          <td><strong>아이스박스</strong></td>
-          <td>₩3,000</td>
-          <td>₩3,000</td>
-          <td>10L 쿨러 + 얼음 가득</td>
-          <td>반납 시 세척 필수</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-</section>
- <!-- 옵션 가격 안내 끝-->
-
-
-<!-- 이용 안내 시작 -->
-<section class="rental-guide-bg">
-  <div class="rental-guide-section" id="rental-guide">
-    <h2>이용 안내</h2>
-
-<div class="guide-block">
-  <h3>1. 🧾 예약 방법</h3>
-  <ul>
-    <li>🟠 <strong>단독대여는 사전 예약제로 운영됩니다.</strong></li>
-    <li>아래 3가지 방법 중 편한 방식으로 예약해 주세요.</li>
-  </ul>
-
-  <div class="contact-buttons">
-    <button class="contact-button form" onclick="window.open('https://forms.gle/FgAyixtWCY9rHDPP8', '_blank')">
-      📝 예약 신청서 작성 (구글폼)
-    </button>
-    <button class="contact-button kakao" onclick="openChat()">
-      💬 카카오톡 채널 문의
-    </button>
-    <button class="contact-button instagram" onclick="goToSNS()">
-      📷 인스타그램 DM
-    </button>
-  </div>
-
-    <div class="guide-block">
-      <h3>2. 🧾 예약 및 결제</h3>
-      <ul>
-        <li>🟠 종일권 / 하프권: 예약 시 <strong>30% 선결제</strong>, 잔액은 현장 결제</li>
-      </ul>
-      <p>
-        ✅ 예약은 <strong>결제 완료 기준</strong>으로 확정됩니다.<br>
-      </p>
-    </div>
-
-    <div class="guide-block">
-      <h3>3. 👥 요금 및 인원</h3>
-      <ul>
-        <li>기본 인원: 4명 │ <strong>추가 5,000원/인</strong> (최대 10명)</li>
-        <li>🐕 반려견 1마리 무료 │ <strong>추가 5,000원/마리</strong> (최대 5마리)</li>
-        <li>👥 11명 이상은 <strong>행사·촬영 전용 대관</strong>으로 전환 (📞 전화 문의)</li>
-        <li>⛺️ <strong>1박2일 캠핑</strong> 이용은 전화 문의 바랍니다.</li>
-      </ul>
-    </div>
-
-    <div class="guide-block">
-      <h3>4. 🎁 기본 제공 물품</h3>
-      <ul>
-        <li>⛺️ 3x4m 바비큐존 전용 텐트 1동</li>
-        <li>🍽 8인용 야외 테이블 + 평상 + 피크닉 매트 세트</li>
-        <li>🌬 18인치 대형 선풍기 1대</li>
-        <li>💡 야간 조명 기본 설치</li>
-        <li>🚰 야외 수돗가 + 🧺 식기 건조대</li>
-        <li>🚻 실내 화장실 + 야외 화장실 완비 (상시 관리)</li>
-      </ul>
-    </div>
-
-
-    <div class="guide-block">
-      <h3>5. 🐶 반려견 이용 안내</h3>
-      <ul>
-        <li>✅ <strong>모든 반려견 환영! 무게 제한 없습니다.</strong></li>
-        <li>✅ <strong>짖음 OK</strong> — 단독 공간이므로 편하게 이용하세요.</li>
-        <li>🐾 전 구역 오프리쉬(목줄 없이 자유롭게) 가능 — 단, 반려견 안전은 보호자 책임입니다.</li>
-        <li>💦 전용 <strong>반려견 수영장</strong> 이용 가능 (사람용 풀장 입수는 금지)</li>
-        <li>💩 <strong>배변은 직접 처리</strong> 부탁드려요. 쾌적한 공간을 함께 만들어주세요.</li>
-        <li>📦 <strong>목줄·패드·배변봉투</strong> 등 용품은 직접 지참해 주세요.</li>
-      </ul>
-    </div>
-
-    <div class="guide-block">
-      <h3>6. 🏊‍♂️ 풀장 이용 수칙</h3>
-      <ul>
-        <li>🚿 입수 전 간단 샤워 + 화장실 이용</li>
-        <li>☀️ 썬크림 최소화, 구명조끼/튜브 지참 권장</li>
-        <li>⏰ <strong>16시 수질 점검 → 퇴수 (30분)</strong></li>
-        <li>🚫 음식·유리병 반입 금지 │ 음주 후 입수 금지</li>
-        <li>🧒 13세 미만 단독 입수 금지</li>
-        <li>🐾 반려견 입수 금지 (반려견 전용 풀장 이용)</li>
-      </ul>
-    </div>
-
-    <div class="guide-block">
-      <h3>7. ⚠️ 매너 · 안전 수칙</h3>
-      <ul>
-        <li>🔇 매너타임: <strong>22:00 – 07:00</strong> (음악·조명 최소화)</li>
-        <li>🎆 폭죽·불꽃놀이 절대 금지</li>
-        <li>🔥 숯·장작 화로는 지정된 장소에서만 사용 가능</li>
-        <li>📸 파손/분실 시 실비 청구 (체크인 시 QR 촬영 필수)</li>
-      </ul>
-    </div>
-
-    <div class="guide-block">
-      <h3>8. 💸 환불 및 변경</h3>
-      <table class="refund-table">
-        <thead>
-          <tr><th>구분</th><th>D-7까지</th><th>D-3까지</th><th>이후</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>종일권 · 하프권</td><td>전액 환불</td><td>70% 환불</td><td>환불 불가</td></tr>
-          <!--<tr><td>3시간 패키지</td><td>전액 환불</td><td>전액 환불</td><td>환불 불가</td></tr>-->
-        </tbody>
-      </table>
-      <p>🌧️ 기상 특보(호우·태풍) 발효 시 <strong>전액 환불 또는 1년 내 1회 날짜 변경</strong> 가능합니다.</p>
-    </div>
-
-    <div class="guide-block">
-      <h3>9. 🎒 준비물 체크리스트</h3>
-      <ul>
-        <li>🏕 캠크닉 장비 (텐트·타프·버너 등)</li>
-        <li>🍴 식기 · 조리도구 · 식재료</li>
-        <li>🏊 물놀이 용품 (튜브, 구명조끼, 타월)</li>
-        <li>🐕 반려견 용품 (목줄, 패드, 배변봉투)</li>
-        <li>🦟 벌레 퇴치제, 여벌 옷, 모기향</li>
-      </ul>
-    </div>
-
-
-    <div class="guide-block contact-block">
-      <h3>10. 📞 문의</h3>
-      <div class="contact-buttons">
-        <button class="contact-button phone" onclick="document.location.href='tel:01073200086'">
-          📱 전화 문의
-        </button>
-        <button class="contact-button kakao" onclick="openChat()">
-          💬 카카오톡 채널
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- 이용 안내 끝 -->
-
-<!--
-<section class="calendar-section">
-  <h2>📅 예약 스케줄 보기</h2>
-    <p class="calendar-note">
-  📌 <strong>캘린더에 표시된 날짜는 이미 예약이 완료된 날입니다.</strong><br>
-  표기되지 않은 날은 모두 <strong>예약 가능</strong>하니 원하는 날짜를 선택해 주세요.
-</p>
-  <iframe
-    src="https://calendar.google.com/calendar/embed?src=nicepicnicofficial%40gmail.com&ctz=Asia%2FSeoul"
-    style="border: 0"
-    width="100%"
-    height="600"
-    frameborder="0"
-    scrolling="no">
-  </iframe>
-</section>
--->
-    <section class="store-info-section">
-  <div class="store-info-inner">
-    <h2>🏠 매점 & 관리실 안내</h2>
-    <p class="store-desc">
-      자연 속 피크닉이지만, 불편함은 최소화했습니다.<br><br>
-      ✔️ <strong>간단한 스낵과 라면</strong>을 구입하거나 드실 수 있는 <strong>작은 매점</strong>이 마련되어 있습니다.<br>
-      ✔️ 갑작스러운 <strong>우천 또는 기상 악화 시</strong>, 잠시 머무를 수 있는 <strong>실내 공간</strong>으로도 활용됩니다.<br>
-      ✔️ 관리자가 상주하여 <strong>현장 문의 및 긴급 대응</strong>도 가능합니다.<br><br>
-      따뜻한 쉼표가 필요할 땐, 이곳을 이용해 주세요.
-    </p>
-    <div class="store-image-wrapper">
-      <img src="images/cafeteri.jpg" alt="매점 및 관리실 내부 사진" />
-    </div>
-  </div>
-</section>
-
-
-<!-- 모달 이미지 뷰어 -->
-<div id="imgModal" class="modal" onclick="closeModal()">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImg">
-</div>
-<!-- 이벤트 섹션 추가 끝 -->
-
-<!-- 기존 자바스크립트나 위에 추가 -->
-<script>
-  function openModal(img) {
-    document.getElementById("imgModal").style.display = "block";
-    document.getElementById("modalImg").src = img.src;
-  }
-
-  function closeModal() {
-    document.getElementById("imgModal").style.display = "none";
-  }
-</script>
-
-
-  
-  <!-- 위치 -->
-  <section class="location" id="location">
-    <h2>오시는 길</h2>
-    <p>경기도 양주시 원골로 104-21 (나이스 피크닉)</p>
-    <!-- 지도는 이미지로 대체하거나 구글 지도 iframe 삽입 가능 -->
-    <div id="map" style="width:100%;height:400px;"></div>
-    <script>
-      var mapOptions = {center: new naver.maps.LatLng(37.781656, 127.024580),
-                        zoom: 15,
-                        minZoom: 10,
-                        zoomControl: true, //줌 컨트롤의 표시 여부
-zoomControlOptions: { //줌 컨트롤의 옵션
-            position: naver.maps.Position.TOP_RIGHT
-},
- scrollWheel: false
-};
-      var map = new naver.maps.Map('map', mapOptions);
-      var marker = new naver.maps.Marker({  position: new naver.maps.LatLng(37.781656, 127.024580), map: map});
-  
-    </script>
-  </section>
-  <!--위치 끝-->
-
-  <!-- 이미지 갤러리 -->
-  <section class="photo-gallery" id="gallery">
-  <h2>이미지 갤러리</h2>
-  <div class="grid-gallery">
-    <img src="images//gallery/gallery01.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery09.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery02.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery03.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery04.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery05.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery06.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery07.jpg" alt="갤러리 이미지" class="media-item">
-    <img src="images/gallery/gallery08.jpg" alt="갤러리 이미지" class="media-item">
-    <!-- 원하는 만큼 이미지 추가 -->
-  </div>
-
-  <!-- 클릭 시 확대용 모달 -->
-  <div id="galleryModal" class="modal">
-  <span class="close gallery-close">&times;</span>
-  <img class="modal-content" id="galleryModalImg">
-</div>
-  
-</section>
- <!-- 이미지 갤러리 끝-->
-
-  <!-- 플로팅 버튼 -->
-<div class="floating-buttons">
-  <button class="float-btn" onclick="document.location.href='tel:01073200086'">
-    <img src="images/icons/ic_phone.png" alt="전화">
-  </button>
-  <!--<button class="float-btn" onclick="goToNaver()">
-    <img src="images/icons/ic_reserve.png" alt="예약">
-  </button>-->
-   <button class="float-btn" onclick="openChat()">
-    <img src="images/icons/ic_chat.png" alt="문의">
-  </button>
-  <button class="float-btn" onclick="goToSNS()">
-    <img src="images/icons/ic_sns.png" alt="SNS">
-  </button>
-  <button class="top-btn">↑<br>TOP</button>
-</div>
-  <script>
-function goToNaver() {
-  window.open('https://booking.naver.com/booking/12/bizes/1403564?preview=1&startDateTime=2025-05-03T00%3A00%3A00%2B09%3A00', '_blank');
-}
- // 카카오 초기화 (자바스크립트 키 입력)
-Kakao.init('81d8707b9a0ada5ee49bed63af66b86d'); // 🔁 여기에 본인의 키 입력
+  <section class="link-category">
+    <h2 class="category-title">대여 서비스</h2>
     
-function openChat() {
-  Kakao.Channel.chat({
-      channelPublicId: '_Vimxln' // 🔁 예: '_AbCdEfG123' 형태
-    });
-}
+    <!--
+    <a href="studio.html" class="link-card">
+      <div class="card-icon"><img src="images/img_thumb_studio.jpg" alt="스튜디오"></div>
+      <div class="card-text">
+        <h3>실내 스튜디오 대여</h3>
+        <p>감성적인 인테리어와 자연광 촬영</p>
+      </div>
+      <div class="card-btn">열기</div>
+    </a>
+-->
 
-function goToSNS() {
-  window.open('https://www.instagram.com/nicepicnic_official', '_blank');
-}
+  <!--준비 완료 시 코드 삭제-->
+<a href="javascript:void(0);" class="link-card coming-soon" onclick="alert('더 나은 서비스로 찾아뵙기 위해 준비 중입니다. 조금만 기다려 주세요!');">
+  <div class="card-icon">
+    <img src="images/img_thumb_studio.jpg" alt="스튜디오">
+  </div>
+  <div class="card-text">
+    <h3>실내 스튜디오 대여 <span class="badge">준비 중</span></h3>
+    <p>감성적인 인테리어와 자연광 촬영</p>
+  </div>
+  <div class="card-btn secondary">Coming Soon</div>
+</a>
 
-  document.querySelector('.top-btn').addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
-   <!-- 플로팅 버튼 끝-->
-  <!-- 푸터 -->
-  <footer class="footer">
-    <p>© 2025 NICE PICNIC. All Rights Reserved.</p>
-  </footer>
-<!-- 푸터끝 -->
- <script>
-const menuModal = document.getElementById("menuModal");
-const menuModalImg = document.getElementById("menuModalImg");
-const menuCloseBtn = document.querySelector(".menu-close");
+    <a href="yard.html" class="link-card">
+      <div class="card-icon"><img src="images/img_thumb_yard.jpg" alt="마당대여"></div>
+      <div class="card-text">
+        <h3>반려견 마당 대여</h3>
+        <p>천여 평 숲속 단독 대관 캠크닉</p>
+      </div>
+      <div class="card-btn">열기</div>
+    </a>
+  </section>
 
-document.querySelectorAll(".menu-image").forEach(img => {
-  img.addEventListener("click", () => {
-    menuModal.style.display = "block";
-    menuModalImg.src = img.src;
-  });
-});
+  <section class="link-category">
+    <h2 class="category-title">촬영 & 프로그램</h2>
+    
+    <!--
 
-menuCloseBtn.onclick = () => {
-  menuModal.style.display = "none";
-};
+    <a href="product-shooting.html" class="link-card">
+      <div class="card-icon"><img src="images/img_thumb_brand.jpg" alt="상품 촬영"></div>
+      <div class="card-text">
+        <h3>브랜드 상품 촬영</h3>
+        <p>자연광과 숲을 배경으로 한 제품 화보</p>
+      </div>
+      <div class="card-btn">문의</div>
+    </a>
 
-window.addEventListener("click", (e) => {
-  if (e.target === menuModal) {
-    menuModal.style.display = "none";
-  }
-});
-</script>
-  <!--이미지 갤러리 모달-->
-    <script>
-const galleryModal = document.getElementById("galleryModal");
-const galleryModalImg = document.getElementById("galleryModalImg");
-const galleryCloseBtn = document.querySelector(".gallery-close");
+    <a href="dog-profile.html" class="link-card">
+      <div class="card-icon"><img src="images/img_thumb_profile.jpg" alt="반려견 프로필"></div>
+      <div class="card-text">
+        <h3>반려견 프로필 촬영</h3>
+        <p>우리 아이의 가장 예쁜 순간을 기록합니다</p>
+      </div>
+      <div class="card-btn">자세히</div>
+    </a>
 
-document.querySelectorAll('.media-item').forEach(item => {
-  item.addEventListener('click', () => {
-    galleryModal.style.display = "block";
-    galleryModalImg.src = item.src;
-  });
-});
+    <a href="hand-printing.html" class="link-card">
+      <div class="card-icon"><img src="images/img_thumb_printing.jpg" alt="핸드프린팅"></div>
+      <div class="card-text">
+        <h3>반려견 핸드프린팅 체험</h3>
+        <p>세상에 하나뿐인 우리 아이 발도장 만들기</p>
+      </div>
+      <div class="card-btn">예약</div>
+    </a>
+    -->
 
-galleryCloseBtn.onclick = function () {
-  galleryModal.style.display = "none";
-};
+      <!--준비 완료 시 코드 삭제-->
 
-window.addEventListener("click", function (event) {
-  if (event.target === galleryModal) {
-    galleryModal.style.display = "none";
-  }
-});
-</script>
- <!-- 메뉴 토글-->
-      <script>
-  const menuToggle = document.getElementById('menuToggle');
-  const navMenu = document.getElementById('navMenu');
-  const closeMenu = document.getElementById('closeMenu');
+    <a href="javascript:void(0);" class="link-card coming-soon" onclick="alert('더 나은 서비스로 찾아뵙기 위해 준비 중입니다. 조금만 기다려 주세요!');">
+    <div class="card-icon">
+      <img src="images/img_thumb_brand.jpg" alt="상품 촬영">
+    </div>
+    <div class="card-text">
+      <h3>브랜드 상품 촬영 <span class="badge">준비 중</span></h3>
+      <p>자연광과 숲을 배경으로 한 제품 화보</p>
+    </div>
+    <div class="card-btn secondary">Coming Soon</div>
+  </a>
 
-  menuToggle.addEventListener('click', () => {
-    navMenu.classList.add('open');
-  });
+    <a href="javascript:void(0);" class="link-card coming-soon" onclick="alert('더 나은 서비스로 찾아뵙기 위해 준비 중입니다. 조금만 기다려 주세요!');">
+    <div class="card-icon">
+      <img src="images/img_thumb_profile.jpg" alt="반려견 프로필">
+    </div>
+    <div class="card-text">
+      <h3>반려견 프로필 촬영 <span class="badge">준비 중</span></h3>
+      <p>우리 아이의 가장 예쁜 순간을 기록합니다</p>
+    </div>
+    <div class="card-btn secondary">Coming Soon</div>
+  </a>
 
-  closeMenu.addEventListener('click', () => {
-    navMenu.classList.remove('open');
-  });
+  <a href="javascript:void(0);" class="link-card coming-soon" onclick="alert('더 나은 서비스로 찾아뵙기 위해 준비 중입니다. 조금만 기다려 주세요!');">
+    <div class="card-icon">
+      <img src="images/img_thumb_printing.jpg" alt="핸드프린팅">
+    </div>
+    <div class="card-text">
+      <h3>반려견 핸드프린팅 체험 <span class="badge">준비 중</span></h3>
+      <p>세상에 하나뿐인 우리 아이 발도장 만들기</p>
+    </div>
+    <div class="card-btn secondary">Coming Soon</div>
+  </a>
+  </section>
 
-  // 바깥 클릭 시 닫기 (선택 사항)
-  window.addEventListener('click', (e) => {
-    if (navMenu.classList.contains('open') && !navMenu.contains(e.target) && e.target !== menuToggle) {
-      navMenu.classList.remove('open');
+  <section class="link-category">
+    <h2 class="category-title">소식 / 안내</h2>
+    
+    <a href="https://www.instagram.com/nicepicnic_official" target="_blank" class="link-card">
+      <div class="card-icon"><img src="images/icons/ic_insta.png" alt="인스타그램"></div>
+      <div class="card-text">
+        <h3>인스타그램</h3>
+        <p>새로운 소식과 일상 보기</p>
+      </div>
+      <div class="card-btn">방문</div>
+    </a>
+
+    <a href="https://naver.me/G2EwIuJ3" target="_blank" class="link-card">
+      <div class="card-icon"><img src="images/icons/ic_location.png" alt="오시는길"></div>
+      <div class="card-text">
+        <h3>오시는 길 안내</h3>
+        <p>양주시 원골로 104-21</p>
+      </div>
+      <div class="card-btn">지도</div>
+    </a>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2025 NICE PICNIC. All Rights Reserved.</p>
+</footer>
+
+<script>
+  // 카카오 초기화 (문의하기 기능 등을 위해 유지)
+  try {
+    if (!Kakao.isInitialized()) {
+      Kakao.init('81d8707b9a0ada5ee49bed63af66b86d');
     }
-  });
+  } catch (e) {
+    console.error("Kakao SDK load error:", e);
+  }
+
+  function openChat() {
+    Kakao.Channel.chat({ channelPublicId: '_Vimxln' });
+  }
+
+  function goToSNS() {
+    window.open('https://www.instagram.com/nicepicnic_official', '_blank');
+  }
 </script>
-<!-- 메뉴 토글 끝-->
+
 </body>
 </html>
