@@ -1,0 +1,49 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    background-color: #f4f6f8;
+    font-family: 'Pretendard', sans-serif;
+}
+
+/* PC 중앙 정렬 컨테이너 */
+.main-container {
+    max-width: 480px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 40px rgba(0,0,0,0.06);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 공통 버튼 디자인 */
+.card-btn {
+    font-size: 0.8rem;
+    color: #275cac;
+    background: #f0f5ff;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-weight: 600;
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-shrink: 0;
+    min-width: 64px;
+    transition: all 0.2s ease;
+}
+
+/* 준비 중 버튼 초기 스타일 */
+.card-btn.secondary {
+    background-color: #f0f5ff;
+    color: #aaaaaa;
+}
+
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.8rem;
+    color: #bbb;
+}

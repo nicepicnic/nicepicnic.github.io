@@ -1,173 +1,61 @@
-/* 폰트 및 초기화 */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+.link-hub-container { padding: 60px 24px; flex: 1; }
+.profile { text-align: center; margin-bottom: 50px; }
+.profile-img img { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin-bottom: 16px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+.profile h1 { font-size: 1.6rem; font-weight: 800; margin-bottom: 8px; }
+.profile-desc { font-size: 0.9rem; word-break: keep-all; /* 단어 단위로 줄바꿈되어 가독성 상승 */ color: #666; max-width: 300px; margin: 0 auto; }
 
-:root {
-    --brand-color: #275cac;
-    --bg-color: #fcfcfc;
-    --card-bg: #ffffff;
-    --text-main: #222222;
-    --text-sub: #666666;
-    --border-color: #eeeeee;
-}
+.category-title { font-size: 0.95rem; color: #275cac; font-weight: 700; margin: 40px 0 16px 4px; }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    font-family: 'Pretendard', sans-serif;
-    margin: 0;
-    line-height: 1.6;
-}
-
-.link-hub-container {
-    max-width: 480px; /* 아이폰 프로 가로폭 기준 최적화 */
-    margin: 0 auto;
-    padding: 60px 20px;
-}
-
-/* 프로필 섹션 디테일 */
-.profile {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.profile-img img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 8px 20px rgba(39, 92, 172, 0.15); /* 브랜드 컬러 그림자 */
-    margin-bottom: 15px;
-}
-
-.profile h1 {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    margin: 0;
-}
-
-.profile-desc {
-    font-size: 0.9rem; /* 폰트 크기를 살짝 조절 */
-    color: var(--text-sub);
-    margin-top: 10px;
-    word-break: keep-all; /* 단어 단위로 줄바꿈되어 가독성 상승 */
-    max-width: 300px; /* 문구가 너무 퍼지지 않게 폭 제한 */
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* 카테고리 타이틀 */
-.category-title {
-    font-size: 0.9rem;
-    color: var(--brand-color);
-    font-weight: 700;
-    margin: 40px 0 12px 5px;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-/* 링크 카드 디테일 */
+/* 링크 카드 공통 호버 설정 */
 .link-card {
     display: flex;
     align-items: center;
-    background: var(--card-bg);
-    border: 1px solid var(--border-color);
+    background: #fff;
+    border: 1px solid #eeeeee;
     border-radius: 20px;
     padding: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
     text-decoration: none;
     color: inherit;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* [복구] 모든 카드가 마우스 오버 시 위로 뜹니다 */
 .link-card:hover {
-    transform: translateY(-3px);
-    border-color: var(--brand-color);
-    box-shadow: 0 10px 25px rgba(39, 92, 172, 0.08);
+    transform: translateY(-5px);
+    border-color: #275cac;
+    box-shadow: 0 12px 24px rgba(39, 92, 172, 0.1);
 }
 
-.card-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-right: 18px;
-    background: #f0f3f7;
-}
-
-.card-icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card-text {
-    flex: 1;
-}
-
-.card-text h3 {
-    margin: 0;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #111;
-}
-
-.card-text p {
-    margin: 4px 0 0;
-    font-size: 0.85rem;
-    color: var(--text-sub);
-}
-
-/* 버튼 스타일 디테일 */
-.card-btn {
-    font-size: 0.8rem;
-    color: var(--brand-color);
-    background: #f0f5ff;
-    padding: 6px 14px;
-    border-radius: 30px;
-    font-weight: 600;
-    white-space: nowrap;
-}
-
-.link-card:hover .card-btn {
-    background: var(--brand-color);
+/* 활성화된 버튼 호버 시 파란색으로 변함 */
+.link-card:not(.coming-soon):hover .card-btn:not(.secondary) {
+    background: #275cac;
     color: #fff;
 }
 
-/* 하단 정보 */
-.footer {
-    text-align: center;
-    padding: 60px 0 40px;
-    font-size: 0.8rem;
-    color: #bbb;
+/* [복구] 준비 중(secondary) 버튼 호버 시 색상 변화 */
+.link-card.coming-soon:hover .card-btn.secondary {
+    background-color: #275cac; /* 기존보다 살짝 진한 회색으로 피드백 제공 */
+    color: #fff;
 }
 
-/* 준비 중인 카드의 전체적인 톤 다운 */
-.link-card.coming-soon {
-    opacity: 0.6;
-    filter: grayscale(0.5); /* 썸네일 색상을 살짝 뺌 */
-    cursor: default;
+.card-icon { width: 56px; height: 56px; border-radius: 14px; overflow: hidden; margin-right: 16px; flex-shrink: 0; background: #f8f9fa; }
+.card-icon img { width: 100%; height: 100%; object-fit: cover; }
+
+.card-text { flex: 1; min-width: 0; }
+.card-text h3 { font-size: 1.05rem; font-weight: 700; margin: 0; display: flex; align-items: center; color: #111; }
+.card-text p { font-size: 0.85rem; color: #888; margin-top: 4px; }
+
+/* 준비 중(Coming Soon) 스타일 */
+.link-card.coming-soon { 
+    opacity: 0.75; 
+    filter: grayscale(1); 
 }
 
-/* 준비 중 텍스트 옆 작은 배지 */
-.badge {
-    font-size: 0.7rem;
-    background-color: #eee;
-    color: #888;
-    padding: 2px 6px;
-    border-radius: 4px;
-    margin-left: 5px;
-    vertical-align: middle;
-}
-
-/* 준비 중 버튼 스타일 변경 */
-.card-btn.secondary {
-    background-color: #eee;
-    color: #999;
-    border: none;
-}
-
+/* 준비 중 카드 호버 시 흑백 느낌을 살짝 줄여 활성화 느낌 전달 */
 .link-card.coming-soon:hover {
-    transform: none; /* 흔들림 방지 */
-    box-shadow: none;
+    opacity: 0.95;
+    filter: grayscale(0.6);
 }
+
+.badge { font-size: 0.7rem; background: #eee; color: #888; padding: 2px 6px; border-radius: 4px; margin-left: 6px; font-weight: 600; }
