@@ -192,6 +192,48 @@
       </div>
     </section>
 
+  <section class="section-padding" id="location">
+  <h3 class="section-title">오시는 길</h3>
+  
+  <div class="notice-card" style="margin-bottom: 15px;">
+    <p>
+      <strong><i class="fas fa-map-marker-alt"></i> 경기도 양주시 원골로 104-21</strong><br>
+      나이스 피크닉 (천여 평의 프라이빗 숲속 마당)
+    </p>
+    <div style="margin-top: 12px; display: flex; gap: 8px;">
+      <a href="https://map.naver.com/v5/search/나이스피크닉" target="_blank" class="card-btn" style="font-size: 0.75rem; padding: 6px 12px;">네이버 지도보기</a>
+    </div>
+  </div>
+
+  <div id="map" class="map-container"></div>
+</section>
+
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=gxhiizwzqn"></script>
+<script>
+  window.addEventListener('load', function() {
+    var mapOptions = {
+      center: new naver.maps.LatLng(37.781656, 127.024580), // 나이스 피크닉 좌표
+      zoom: 15,
+      minZoom: 10,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT
+      },
+      scrollWheel: false
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    var marker = new naver.maps.Marker({
+      position: new naver.maps.LatLng(37.781656, 127.024580),
+      map: map,
+      icon: {
+        content: '<div style="color: #275cac; font-size: 24px;"><i class="fas fa-map-marker-alt"></i></div>',
+        anchor: new naver.maps.Point(12, 24)
+      }
+    });
+  });
+</script>
+
     <footer class="footer">
       <p>© 2025 NICE PICNIC. All Rights Reserved.</p>
     </footer>

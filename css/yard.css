@@ -184,3 +184,18 @@
 .swiper-container::-webkit-scrollbar {
     display: none;
 }
+
+/* 지도 섹션 스타일 */
+.map-container {
+    width: 100%;
+    height: 300px; /* 모바일에서 보기 적당한 높이 */
+    border-radius: 12px; /* 카드와 동일한 라운딩 */
+    border: 1px solid var(--border-blue);
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+}
+
+#location .notice-card i {
+    color: var(--brand-blue);
+    margin-right: 4px;
+}
