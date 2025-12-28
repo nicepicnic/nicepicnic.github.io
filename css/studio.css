@@ -1,0 +1,71 @@
+/* yard.css의 스타일을 상속받습니다. */
+@import url('yard.css');
+
+/* 스튜디오 전용 히로 이미지 설정 */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url('../images/studio/img_studio_hero.jpg') center/cover;
+}
+
+/* 혜택 카드: 마당(yard.html)과 동일하게 블루 톤으로 통일 */
+.benefit-card {
+    background: linear-gradient(135deg, #275cac, #4a80d4);
+    box-shadow: 0 4px 15px rgba(39, 92, 172, 0.2);
+}
+
+/* 포인트 그리드 아이콘 컬러 통일 */
+.point-item i {
+    color: var(--brand-blue);
+}
+
+/* 지도 및 기타 세부 조정 */
+.map-container {
+    height: 300px; /* yard와 동일한 높이로 통일 */
+}
+
+/* 채광 가이드 카드 스타일 */
+.lighting-guide-card {
+    background-color: var(--light-blue); /* #f8faff */
+    border: 1px solid var(--border-blue);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.guide-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.guide-icon {
+    color: var(--brand-blue); /* #275cac */
+    font-size: 1.2rem;
+    margin-top: 2px;
+}
+
+.guide-content strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--brand-blue);
+    margin-bottom: 4px;
+    font-weight: 800;
+}
+
+.guide-content p {
+    font-size: 0.85rem;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.guide-divider {
+    height: 1px;
+    background-color: var(--border-blue);
+    margin: 15px 0;
+}
+
+/* 강조 텍스트 */
+.guide-content strong, 
+.guide-content p strong {
+    color: var(--brand-blue);
+}
