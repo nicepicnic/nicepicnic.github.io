@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>반려견 마당 대여 - 나이스 피크닉</title>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBHR5FWN6Q"></script>
+  <script src="js/analytics.js"></script>
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/yard.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -205,7 +207,7 @@
       나이스 피크닉 (천여 평의 프라이빗 숲속 마당)
     </p>
     <div style="margin-top: 12px; display: flex; gap: 8px;">
-      <a href="https://map.naver.com/v5/search/나이스피크닉" target="_blank" class="card-btn" style="font-size: 0.75rem; padding: 6px 12px;">네이버 지도보기</a>
+      <a href="https://map.naver.com/v5/search/나이스피크닉" target="_blank" class="card-btn" onclick="logEvent('click_map_yard');" style="font-size: 0.75rem; padding: 6px 12px;">네이버 지도보기</a>
     </div>
   </div>
 
@@ -245,9 +247,9 @@
 
   <div class="floating-cta">
     <div class="cta-flex">
-      <a href="tel:010-7320-0086" class="icon-btn"><i class="fas fa-phone"></i></a>
+      <a href="tel:010-7320-0086" class="icon-btn" onclick="trackCall('yard');"><i class="fas fa-phone"></i></a>
       <a href="javascript:openChat();" class="icon-btn"><i class="fas fa-comment"></i></a>
-      <a href="https://booking.naver.com/booking/10/bizes/1565986" target="_blank" class="btn-primary flex-grow">지금 예약 신청하기</a>
+      <a href="https://booking.naver.com/booking/10/bizes/1565986" target="_blank" class="btn-primary flex-grow" onclick="trackReservation('yard_naver');">지금 예약 신청하기</a>
     </div>
   </div>
 </div>
@@ -260,22 +262,6 @@
       item.classList.toggle('active');
     });
   });
-
-  // 1. 카카오 SDK 초기화
-  try {
-    if (!Kakao.isInitialized()) {
-      Kakao.init('81d8707b9a0ada5ee49bed63af66b86d');
-    }
-  } catch (e) {
-    console.error("Kakao SDK 초기화 실패:", e);
-  }
-
-  // 2. 채팅창 열기 함수
-  function openChat() {
-    Kakao.Channel.chat({
-      channelPublicId: '_Vimxln' 
-    });
-  }
 </script>
 
 </body>
