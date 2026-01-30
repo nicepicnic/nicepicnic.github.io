@@ -1,0 +1,51 @@
+/* yard.css의 스타일 변수 및 기본 레이아웃 상속 */
+@import url('yard.css');
+
+/* 1. 히로 섹션 배경 이미지 교체 */
+/* 주의: images/profile 폴더에 img_profile_hero.jpg 이미지를 넣어주세요 */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url('../images/profile/img_profile_hero.jpg') center/cover;
+}
+
+/* 2. 상품 상세 리스트 스타일 (촬영 패키지 설명용) */
+.detail-list-box {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #eee;
+}
+
+.detail-list-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detail-list-box li {
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 12px;
+}
+
+/* 리스트 앞 점(bullet) 스타일 */
+.detail-list-box li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 4px;
+    height: 4px;
+    background-color: var(--brand-blue);
+    border-radius: 50%;
+}
+
+/* 3. 하단 버튼 아이콘 스타일 조정 */
+.btn-primary i {
+    font-size: 1.1rem;
+}
+
+/* 4. 포인트 그리드 아이콘 크기 미세 조정 (카메라 등) */
+.point-item i {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}

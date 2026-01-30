@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>반려견 프로필 촬영 - 나이스 피크닉</title>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBHR5FWN6Q"></script>
+  <script src="js/analytics.js"></script>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/profile.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png">
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+
+<div class="main-container">
+  <header class="page-header">
+    <a href="index.html" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+    <h1 class="page-title">반려견 프로필 촬영</h1>
+    <div class="header-spacer"></div>
+  </header>
+
+  <main class="content-wrapper">
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <h2>천 평 숲속 마당에서 남기는<br>우리 아이의 가장 빛나는 오늘</h2>
+        <p>15분의 기다림과 퍼스널 컬러,<br>그리고 자연이 만드는 견생샷</p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-light-blue">
+      <div class="point-grid">
+        <div class="point-item"><i class="fas fa-palette"></i><span>퍼스널 컬러</span></div>
+        <div class="point-item"><i class="fas fa-tree"></i><span>숲속 야외촬영</span></div>
+        <div class="point-item"><i class="fas fa-car"></i><span>단독 주차</span></div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="notice-card" style="border-left: 4px solid var(--brand-blue);">
+        <p>
+            <strong>"강아지가 힘들어하지 않을까요?"</strong><br>
+            걱정 마세요. 나이스 피크닉은 억지로 앉히거나 재촉하지 않습니다. 충분히 냄새 맡고 적응할 때까지 기다리는 <strong>'안심 촬영'</strong>을 약속합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="facility-section">
+      <h3 class="section-title" style="padding: 0 20px;">포트폴리오</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/profile/img_portfolio_01.jpg" alt="퍼스널 컬러 프로필">
+            <div class="slide-caption">모색에 딱 맞는 퍼스널 컬러</div>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/profile/img_portfolio_02.jpg" alt="야외 스냅">
+            <div class="slide-caption">천 평 숲속 마당 자연광 스냅</div>
+          </div>
+          <div class="swiper-slide"> 
+            <img src="images/profile/img_portfolio_03.jpg" alt="자연스러운 모습">
+            <div class="slide-caption">억지 연출 없는 자연스러운 표정</div>
+          </div>
+        </div>
+        <p class="swipe-hint"><i class="fas fa-hand-pointer"></i> 옆으로 넘겨 아이들의 사진을 확인하세요</p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-soft">
+      <h3 class="section-title">촬영 패키지 (All-Inclusive)</h3>
+      
+      <div class="info-card highlight">
+        <span class="badge-best">BEST CHOICE</span>
+        <div class="card-header">
+          <span class="item-name" style="color:#275cac; font-size:1.05rem;"><i class="fas fa-star"></i> 시그니처 컬러 화보</span>
+          <span class="item-price">149,000</span>
+        </div>
+        <p class="item-desc">내 아이의 '견생샷'을 위한 퍼스널 컬러 풀 패키지</p>
+        <div class="detail-list-box">
+           <ul>
+             <li><strong>✨ 퍼스널 컬러 진단 포함</strong></li>
+             <li>배경 2컨셉 (컬러 1 + 컨셉/소품 1)</li>
+             <li>촬영 50분 (충분한 적응/케어 시간)</li>
+             <li>의상 1벌 무료 대여</li>
+             <li>정밀 보정 4장 + A4 포스터 인화</li>
+             <li><strong>📂 원본 전체 제공 (색감 보정 포함)</strong></li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <span class="item-name"><i class="fas fa-camera"></i> 베이직 프로필</span>
+          <span class="item-price">79,000</span>
+        </div>
+        <p class="item-desc">첫 방문, 가벼운 기록용으로 추천</p>
+        <div class="detail-list-box">
+           <ul>
+             <li>단색 배경지 1컬러 선택</li>
+             <li>촬영 30분 (적응 10분 포함)</li>
+             <li>정밀 보정본 2장 (디지털+4x6 인화)</li>
+             <li>B컷(리사이즈) 10장 추가 제공</li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <span class="item-name"><i class="fas fa-tree"></i> 숲속 로케이션 패키지</span>
+          <span class="item-price">280,000</span>
+        </div>
+        <p class="item-desc">실내 촬영 + 나이스 피크닉 숲속 야외 스냅</p>
+        <div class="detail-list-box">
+           <ul>
+             <li>총 90분 (실내 + 야외 스냅)</li>
+             <li><strong>1,000평 숲속 마당 단독 로케이션</strong></li>
+             <li>역동적인 액션 샷 & 자연 스냅</li>
+             <li>정밀 보정 10장 + <strong>20p 화보 앨범</strong></li>
+             <li>견주 동반 촬영 무료</li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="notice-card" style="margin-top: 15px;">
+        <p>
+          <i class="fas fa-check" style="color: var(--brand-blue); margin-right: 4px;"></i>
+          <strong>투명한 가격:</strong> 원본 구매비나 의상 대여비 등 현장에서 요구하는 숨겨진 추가 비용이 없습니다. (반려동물 추가 3만 / 견주 동반 2만 별도)
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding">
+        <h3 class="section-title">촬영 후 여기 어때요?</h3>
+        <div class="notice-card">
+            <p style="margin-bottom: 8px;"><strong>🚗 촬영 후 즐기는 양주 나들이</strong></p>
+            <p style="font-size: 0.8rem; color: #666; margin-bottom: 12px;">촬영이 끝난 후 차로 10분 이내 거리에 이런 곳들이 있어요.</p>
+            <ul class="icon-list" style="margin:0;">
+                <li style="margin-bottom: 6px;"><i class="fas fa-coffee"></i> <strong>카페 두루두루:</strong> 넓은 반려견 운동장이 있는 카페</li>
+                <li style="margin-bottom: 6px;"><i class="fas fa-campground"></i> <strong>글램핑 코리아:</strong> 특별한 1박 2일 여행의 시작</li>
+                <li><i class="fas fa-walking"></i> <strong>양주 관아지:</strong> 가볍게 산책하기 좋은 문화 유적지</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section-padding">
+      <h3 class="section-title">촬영 가이드 & FAQ</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>🐶 짖거나 겁이 많은데 괜찮을까요?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            네, 환영합니다! 저희는 예약제로 운영되어 다른 강아지와 마주칠 일이 없습니다. 또한 '무소음 셔터'와 '지속광'을 사용하여 소리와 빛에 예민한 아이들도 편안하게 촬영할 수 있습니다.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>🎨 퍼스널 컬러 진단은 어떻게 하나요?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            촬영 전, 전문 드레이프(천)를 아이에게 대보며 모색과 눈동자 색에 가장 잘 어울리는 '인생 배경색'을 찾아드립니다. 톤그로 없는 완벽한 사진을 남겨보세요.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>📅 예약 및 진행 과정은요?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            하단 '카카오톡 상담'으로 문의주시면 날짜를 조율합니다. 예약금 입금 후 확정되며, 촬영 당일에는 웰컴 키트 제공 및 적응 시간을 가진 후 촬영이 시작됩니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" style="padding-bottom: 100px;">
+      <p>© 2025 NICE PICNIC STUDIO. All Rights Reserved.</p>
+    </footer>
+  </main>
+
+  <div class="floating-cta">
+    <div class="cta-flex">
+      <a href="tel:010-7320-0086" class="icon-btn" onclick="trackCall('profile');"><i class="fas fa-phone"></i></a>
+      <a href="javascript:openChat();" class="btn-primary flex-grow" onclick="trackReservation('profile_kakao');">
+        <i class="fas fa-comment-dots" style="margin-right: 6px;"></i> 촬영 상담 및 예약 문의
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  // 아코디언 동작 스크립트
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+  // 카카오 상담 함수
+  function openChat() {
+      // 본인 카카오톡 채널 URL 입력 필요
+      window.open('http://pf.kakao.com/_xxxx', '_blank'); 
+  }
+</script>
+
+</body>
+</html>
