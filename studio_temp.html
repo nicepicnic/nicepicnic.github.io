@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>반려견 프로필 촬영 - 나이스 피크닉</title>
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CBHR5FWN6Q"></script>
+  <script src="js/analytics.js"></script>
+  
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/studio.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png">
+  <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+
+<div class="main-container">
+  <header class="page-header transparent-header">
+    <a href="index.html" class="back-btn"><i class="fas fa-chevron-left"></i></a>
+    <h1 class="page-title">반려견 프로필</h1>
+    <div class="header-spacer"></div>
+  </header>
+
+  <main class="content-wrapper">
+    <section class="hero-section">
+      <div class="hero-overlay">
+        <p class="hero-subtitle">NICE PICNIC STUDIO</p>
+        <h2>가장 사랑스러운 지금,<br>영원히 기억될 견생샷</h2>
+      </div>
+    </section>
+
+    <section class="section-padding bg-light-blue">
+      <div class="point-grid">
+        <div class="point-item"><i class="fas fa-camera"></i><span>1:1 맞춤</span></div>
+        <div class="point-item"><i class="fas fa-sun"></i><span>자연광</span></div>
+        <div class="point-item"><i class="fas fa-tree"></i><span>야외 스냅</span></div>
+        <div class="point-item"><i class="fas fa-palette"></i><span>AI 아트</span></div>
+      </div>
+    </section>
+
+    <section class="section-padding">
+      <div class="notice-card" style="border-left: 4px solid var(--brand-blue);">
+        <p>
+            <strong>"강아지가 힘들어하지 않을까요?"</strong><br>
+            걱정 마세요. 나이스 피크닉은 억지로 앉히거나 재촉하지 않습니다. 충분히 냄새 맡고 적응할 때까지 기다리는 <strong>'안심 촬영'</strong>을 약속합니다.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio-section">
+      <h3 class="section-title" style="padding: 0 20px 15px;">포트폴리오</h3>
+      <div class="portfolio-grid">
+        <div class="portfolio-item full-width">
+          <img src="images/profile/img_portfolio_04.png" alt="실내 프로필 메인">
+          <!--<div class="img-caption">나이스 무드 프로필</div>-->
+        </div>
+        <div class="portfolio-item">
+          <img src="images/profile/img_portfolio_02.png" alt="견종 다양성1">
+        </div>
+        <div class="portfolio-item">
+          <img src="images/profile/img_portfolio_06.png" alt="표정 클로즈업">
+        </div>
+        <div class="portfolio-item full-width">
+          <img src="images/profile/img_portfolio_01.jpg" alt="실내 스튜디오">
+          <!--<div class="img-caption">보호자와 함께</div>-->
+        </div>
+        <div class="portfolio-item">
+          <img src="images/profile/img_portfolio_03.jpg" alt="뛰어노는 모습">
+        </div>
+        <div class="portfolio-item">
+          <img src="images/profile/img_portfolio_05.jpg" alt="자연광 스냅">
+          <!--<div class="img-caption">햇살 가득 마당 스냅</div>-->
+        </div>
+      </div>
+    
+      
+      <div class="more-btn-area">
+        <a href="https://www.instagram.com/nicepicnic_official" target="_blank" class="instagram-btn">
+          <i class="fab fa-instagram"></i> 더 많은 사진 보기
+        </a>
+      </div>
+
+    </section>
+
+    <section class="section-padding bg-soft">
+      <h3 class="section-title">촬영 패키지</h3>
+      
+      <div class="info-card">
+        <img src="images/profile/sample_idcard.png" alt="컬러 증명사진 예시" class="package-thumb">
+        
+        <div class="card-header">
+          <span class="item-name">피크닉 컬러 증명 <span style="font-size:0.8em; color:#ff5e5e;">(OPEN 특가)</span></span>
+          <span class="item-price">35,000</span>
+        </div>
+        <p class="item-desc">우리 아이 모색에 찰떡인 퍼스널 컬러 증명사진</p>
+        <div class="detail-list-box">
+           <ul>
+             <li>단품 예약 시: 35,000원 (정상가 40,000원)</li>
+             <li><strong>★마당 대여 손님 특별 할인가: 20,000원★</strong></li>
+             <li>스트레스 없는 깔끔한 기본 배경 촬영 후 정밀 합성</li>
+             <li>증명사진(3.5x4.5) 8매 인화 + 고화질 보정본 1컷</li>
+             <li><strong>기본 1견 기준</strong> (다견 가정은 마리당 추가금 발생)</li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="info-card highlight">
+        <span class="badge-best" style="background-color: var(--brand-blue);">SIGNATURE</span>
+        <img src="images/profile/sample_yard.png" alt="야외 마당 스냅 예시" class="package-thumb">
+
+        <div class="card-header">
+          <span class="item-name">햇살 가득 마당 스냅 (야외)</span>
+          <span class="item-price">150,000</span>
+        </div>
+        <p class="item-desc">천여 평 잔디 마당에서 뛰어노는 가장 자연스러운 순간</p>
+        <div class="detail-list-box">
+           <ul>
+             <li><strong>촬영용 마당 단독 사용 1시간 포함</strong></li>
+             <li>스냅 손님 전용 마당 연장: <strong>1시간 추가 시 15,000원</strong> (정상가 25,000원)</li>
+             <li>야외 자연광 동체 추적 스냅 (역동적인 컷 위주)</li>
+             <li>정밀 보정본 3컷 제공 + 5x7인치 2매 인화</li>
+             <li><strong>기본 1견 기준</strong> (다견 가정은 마리당 추가금 발생)</li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="info-card" style="border: 2px solid var(--brand-blue);">
+        <span class="badge-best">BEST</span>
+        <img src="images/profile/sample_family.png" alt="가족사진 및 대형 액자 예시" class="package-thumb">
+
+        <div class="card-header">
+          <span class="item-name">VIP 올인원 피크닉</span>
+          <span class="item-price">190,000</span>
+        </div>
+        <p class="item-desc">마당 대여부터 야외 스냅, 증명사진까지 한 번에 끝내는 풀 패키지</p>
+        <div class="detail-list-box">
+           <ul>
+             <li><strong>프라이빗 숲속 마당 2시간 단독 대여</strong></li>
+             <li>햇살 가득 마당 스냅 (야외 보정본 3컷)</li>
+             <li>피크닉 컬러 증명 (실내 보정본 1컷 + 인화 8매)</li>
+             <li>정상가 240,000원 ➔ <strong>패키지 특별 할인가 190,000원</strong></li>
+             <li><strong>기본 1견 기준</strong> (다견 가정은 마리당 추가금 발생)</li>
+           </ul>
+        </div>
+      </div>
+
+      <div class="info-card" style="background-color: #fff; border: 1px dashed #ccc;">
+        <div class="card-header" style="border-bottom: 1px solid #eee; padding-bottom: 10px; margin-bottom: 5px;">
+          <span class="item-name" style="font-size: 0.95rem;"><i class="fas fa-plus-circle" style="color:var(--brand-blue);"></i> 추가 옵션 & 굿즈</span>
+        </div>
+        
+        <div class="goods-grid">
+          <div class="goods-item">
+            <img src="images/profile/sample_ai_art.png" alt="AI 명화 작품" class="goods-img">
+            <span class="goods-name">AI 명화 초상화</span>
+            <span class="goods-price">30,000</span>
+          </div>
+          <div class="goods-item">
+            <img src="images/profile/goods_original.png" alt="원본 전체" class="goods-img">
+            <span class="goods-name">원본 전체 구매</span>
+            <span class="goods-price">50,000</span>
+          </div>
+          <div class="goods-item">
+            <img src="images/profile/goods_poca.png" alt="투명 포카" class="goods-img">
+            <span class="goods-name">투명 포토카드</span>
+            <span class="goods-price">10,000</span>
+          </div>
+          <div class="goods-item">
+            <img src="images/profile/goods_family.png" alt="인원 추가" class="goods-img">
+            <span class="goods-name">반려동물/인원 추가(1명/1견당)</span>
+            <span class="goods-price">30,000</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section-padding">
+      <h3 class="section-title">자주 묻는 질문</h3>
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>🐶 우리 아이가 가만히 있질 않아요</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            걱정하지 마세요! 억지로 앉히기보다 아이가 공간에 적응하며 노는 자연스러운 모습을 포착합니다. 특히 '마당 스냅'은 뛰어노는 모습을 담기 때문에 활발한 아이들에게 추천합니다.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>📅 예약은 어떻게 하나요?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            하단의 '촬영 상담 및 예약 문의' 버튼을 눌러 카카오톡으로 원하시는 날짜와 패키지를 말씀해 주세요. 스케줄 확인 후 예약금을 입금하시면 확정됩니다.
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span>📸 보정본과 액자는 언제 받나요?</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="accordion-content">
+            촬영 후 3일 내 원본(셀렉용)을 보내드립니다. 사진 선택 후 보정본은 약 1~2주 소요됩니다. 액자는 보정 확정 후 제작되며, 대형 액자의 경우 택배로 안전하게 발송해 드립니다.
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="section-padding" id="location">
+  <h3 class="section-title">오시는 길</h3>
+  
+  <div class="notice-card" style="margin-bottom: 15px;">
+    <p>
+      <strong><i class="fas fa-map-marker-alt"></i> 경기도 양주시 원골로 104-21</strong><br>
+      나이스 피크닉 (천여 평의 프라이빗 숲속 마당)
+    </p>
+    <div style="margin-top: 12px; display: flex; gap: 8px;">
+      <a href="https://map.naver.com/v5/search/나이스피크닉" target="_blank" class="card-btn" onclick="logEvent('click_map_yard');" style="font-size: 0.75rem; padding: 6px 12px;">네이버 지도보기</a>
+    </div>
+  </div>
+
+  <div id="map" class="map-container"></div>
+</section>
+
+<script type="text/javascript" src="https://oapi.map.naver.com/openapi/v3/maps.js?ncpKeyId=gxhiizwzqn"></script>
+<script>
+  window.addEventListener('load', function() {
+    var mapOptions = {
+      center: new naver.maps.LatLng(37.781656, 127.024580), // 나이스 피크닉 좌표
+      zoom: 15,
+      minZoom: 10,
+      zoomControl: true,
+      zoomControlOptions: {
+        position: naver.maps.Position.TOP_RIGHT
+      },
+      scrollWheel: false
+    };
+    
+    var map = new naver.maps.Map('map', mapOptions);
+    var marker = new naver.maps.Marker({
+      position: new naver.maps.LatLng(37.781656, 127.024580),
+      map: map,
+      icon: {
+        content: '<div style="color: #275cac; font-size: 24px;"><i class="fas fa-map-marker-alt"></i></div>',
+        anchor: new naver.maps.Point(12, 24)
+      }
+    });
+  });
+</script>
+
+    <footer class="footer" style="padding-bottom: 100px;">
+      <p>© 2026 NICE PICNIC STUDIO. All Rights Reserved.</p>
+    </footer>
+  </main>
+
+  <!-- 오픈 완료 시 주석 해제
+  <div class="floating-cta">
+    <div class="cta-flex">
+      <a href="tel:010-7320-0086" class="icon-btn" onclick="trackCall('profile');"><i class="fas fa-phone"></i></a>
+      <a href="javascript:openChat();" class="icon-btn"><i class="fas fa-comment"></i></a>
+      <a href="https://booking.naver.com/booking/10/bizes/1565986" target="_blank" class="btn-primary flex-grow" onclick="trackReservation('profile_naver');">지금 예약 신청하기</a>
+    </div>
+  </div>-->  
+
+  <div class="floating-cta">
+    <div class="cta-flex">
+      <a href="#" class="btn-primary flex-grow" onclick="alert('더 좋은 서비스로 찾아 뵙기 위해 준비 중입니다.'); return false;">
+       COMING SOON
+      </a>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+<script>
+  // 아코디언 동작 스크립트
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+
+</script>
+
+</body>
+</html>
