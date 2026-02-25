@@ -39,7 +39,7 @@
     min-height: 400px;
     /* 배경 이미지: 실제 이미지가 없으면 yard_hero.png가 보일 수 있으니 경로 확인 필요 */
     background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%), 
-                url('../images/profile/img_profile_hero.jpg') center/cover no-repeat;
+                url('../images/profile/img_portfolio_hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: flex-end; /* 텍스트를 하단으로 */
