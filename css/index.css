@@ -59,3 +59,21 @@
 }
 
 .badge { font-size: 0.7rem; background: #eee; color: #888; padding: 2px 6px; border-radius: 4px; margin-left: 6px; font-weight: 600; }
+
+/* Coming Soon 버튼 전용 미학적 세팅 */
+.link-card.coming-soon .card-btn {
+    background-color: #f1f3f5; /* 너무 어둡지 않고 세련된 밝은 회색으로 변경 */
+    color: #adb5bd; /* 텍스트 색상도 부드러운 톤으로 매칭 */
+    font-size: 0.8rem; /* '열기' 버튼과 시각적 밸런스를 맞추기 위해 폰트 사이즈 축소 */
+    font-weight: 600; /* 글씨가 작아진 대신 선명도를 위해 굵기 추가 */
+    padding: 6px 10px; /* 길어진 텍스트에 맞춰 좌우 여백을 타이트하게 조정 */
+    white-space: nowrap; /* 화면이 좁아져도 글자가 두 줄로 깨지는 현상 완벽 방지 */
+    letter-spacing: -0.3px; /* 자간을 살짝 좁혀서 단정하고 콤팩트한 느낌 부여 */
+}
+
+/* 마우스 호버 시 디자인 무효화 (기존 코드와 동일) */
+.link-card.coming-soon:hover {
+    transform: none; 
+    box-shadow: none; 
+    border-color: #eeeeee; /* 호버 시 파란색 테두리가 생기지 않도록 고정 */
+}
